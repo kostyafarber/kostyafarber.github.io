@@ -1,7 +1,8 @@
-site: Made Jekyll Theme
+site: Kostya Farber Blog
 
-url: 
-baseurl: 
+url: https://kostyafarber.github.io/
+baseurl:
+
 
 collections:
   pages:
@@ -12,7 +13,7 @@ collections:
     permalink: /blog/:slug
   projects:
     output: true
-    permalink: /project/:slug
+    permalink: /projects/:slug
 
 defaults:
   -
@@ -37,7 +38,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "project"
+      layout: "projects"
 
 markdown: kramdown
 highlighter: rouge
@@ -59,3 +60,4 @@ plugins:
 
 paginate: 7
 paginate_path: "/blog/page-:num/"
+

@@ -1,5 +1,5 @@
 ---
-title: An Exploration of What Questionable Movies Share
+title: What Questionable Movies Share
 subtitle: What do bad movies share? An inquiry into the spirit of bad things.
 description: An analysis of a list me and my friends have compiled over the years whilst watching films that we considered so bad they were good. Suffice to say, not all of them where as funny as we thought. I decided to dig deeper and extract relationships and insights from these films.
 featured_image: '/trash_movies/cinema.jpg'
@@ -7,109 +7,46 @@ gallery_images:
 - /trash_movies/trashmovies.jpg
 ---
 
-This page is a demo that shows everything you can do inside portfolio and blog posts.
+# How It All Starts
+<br>
+One of my fond memories of a bygone era was visiting the local video store, the now ancient ***Video Ezy***, to pick up a movie with my friends. We would go
+to each others houses and have a movie marathon and watch all types of films. Some good, some bad. 
 
-We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.
+![](../images/projects/trash_movies/videoezy.jpg)
 
-![](/images/demo.jpg)
+Over the years we all naturally became avid *cinephiles*. Analysing films while watching them became a favourite pastime and
+surprisingly, the bad films had plenty of (hilarious) things to analyse. What followed was uncovering a giant underground cult following of all things
+bad. 
 
-**Obviously,** we’ve styled up *all the basic* text formatting options [available in markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+One particularly brilliant medium that explored this sub-genre of movie, was the podcast *How Did This Get Made*. 
 
-You can create lists:
+> How Did This Get Made? is a podcast on the Earwolf network. It is hosted by Paul Scheer, June Diane Raphael and Jason Mantzoukas. Each episode, which typically has a different guest, features the deconstruction and mockery of outlandish and bad films.
 
-* Simple bulleted lists
-* Like this one
-* Are cool
+After listening to this podcast religiously, me and my friends decided, why not create our own corpus of bad movies. So the bad
+movie club is born, and 200+ movies later a rather interesting (to me at least) dataset is produced.
 
-And:
+I've always had the idea to create a data science project from our long and silly list, so here it is. It is currently a work in progress. As I progress
+further with whatever comes out of this, the relevant posts will appear below in a list, kind of like this one:
 
-1. Numbered lists
-2. Like this other one
-3. Are great too
+<ul class="posts">
+{% assign count = 0 %}
+{% for post in site.posts %}
+  {% if post.tags contains 'sydneyhouseprices' %}
+    {% if count < 20 %}
+      {% assign count = count|plus:1 %}
+      <div class="post_info">
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <span>({{ post.date | date:"%Y-%m-%d" }})</span>
+        </li>
+      </div>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</ul>
 
-You can also add blockquotes, which are shown at a larger width to help break up the layout and draw attention to key parts of your content:
+For now, you can check out this [link](https://github.com/kostyafarber/trash-movie-classifier) for the GitHub repository to see what im up to.
 
-> “Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.”
+Hopefully by the end of this I will be able to answer the question: 
 
-The theme also supports markdown tables:
-
-| Item                 | Author        | Supports tables? | Price |
-|----------------------|---------------|------------------|-------|
-| Duet Jekyll Theme    | Jekyll Themes | Yes              | $49   |
-| Index Jekyll Theme   | Jekyll Themes | Yes              | $49   |
-| Journal Jekyll Theme | Jekyll Themes | Yes              | $49   |
-
-And footnotes[^1], which link to explanations[^2] at the bottom of the page[^3].
-
-[^1]: Beautiful modern, minimal theme design.
-[^2]: Powerful features to show off your work.
-[^3]: Maintained and supported by the theme developer.
-
-You can throw in some horizontal rules too:
-
----
-
-#### Image galleries
-
-Here's a really neat custom feature we added – galleries:
-
-{% include post-components/gallery.html
-	columns = 2
-	full_width = true
-	images = "/images/demo.jpg,/images/demo.jpg,/images/demo.jpg,/images/demo.jpg,
-	"
-%}
-
-Inspired by the Galleries feature from WordPress, we've made it easy to create grid layouts for your images. Just use a simple Liquid snippet in your post to create a masonry grid image layout:
-
-
-```python
-with open("trash-movie-list.txt", ) as file:
-    # read txt file, convert to list
-    lines = [x.strip() for x in file.readlines()]
-
-    # replace all numberings and everything in front the dashes
-    pattern = '\-.*|^\d*.'
-    replace = ""
-
-    # store cleaned titles as specified by regex in a new list
-    trash_list = [re.sub(pattern, replace, x).strip() for x in lines]
-
-# store list in dataframe
-df_movies = pd.DataFrame(trash_list, columns=['Titles'])
-lol
-```
-
-*See what we did there? Code and syntax highlighting is built-in too!*
-
-Change the number inside the 'columns' setting to create different types of gallery for all kinds of purposes. You can even click on each image to seamlessly enlarge it on the page.
-
-
-#### Image carousels
-
-Here's another gallery with only one column, which creates a carousel slide-show instead.
-
-A nice little feature: the carousel only advances when it is in view, so your visitors won't scroll down to find it half way through your images.
-
-{% include post-components/gallery.html
-	columns = 1
-	full_width = true
-	images = "/images/demo.jpg,/images/demo.jpg,/images/demo.jpg
-	"
-%}
-
-#### What about videos?
-
-Videos are an awesome way to show off your work in a more engaging and personal way, and we’ve made sure they work great on our themes. Just paste an embed code from YouTube or Vimeo, and the theme makes sure it displays perfectly:
-
-{% include post-components/video.html
-	url = "https://player.vimeo.com/video/270725085?color=6c6e95&title=0&byline=0"
-	full_width = true
-%}
-
-### Pretty cool, huh?
-
-We've packed this theme with powerful features to show off your work.
-Why not put them to use on your new website?
-
-<a href="https://jekyllthemes.io/theme/made-portfolio-jekyll-theme" class="button--fill">Get This Theme</a>
+### What Do Bad Movies Share?
