@@ -54,7 +54,7 @@ The first character, known as a **metacharacter**, are characters that serve spe
 The period **`(.)`** metacharacter is a **wildcard** character. A wildcard is a placeholder represented by a single character which can be interpreted as a number of literal characters. This will match any character but the newline character **`(\n)`**. The next character is also a wildcard **`(*)`** and will match the character to its left zero or more times. This first search pattern will therefore match everything including and after the dashes and solves the first part of the pattern.
 <br>
 
-The **`(|)`** character is a logical operator that signifies **either or**. This will match the expression to its left **or** the expression to its right. The **`(^)`** tells regex to start the search at the start of the string or line, whilst the metacharacter **`(/d)`** will match any digits, followed by the wildcard  **`(*)`** for zero or more occurrences. Finally, the  **`(*)`** will match any single character after all the digits, in our case the period. 
+The **`(|)`** character is a logical operator that signifies **either or**. This will match the expression to its left **or** the expression to its right. The **`(^)`** tells regex to start the search at the start of the string or line, whilst the metacharacter **`(/d)`** will match any digits, followed by the wildcard  **`(*)`** for zero or more occurrences. Finally, the  **`(.)`** will match any single character after all the digits, in our case the period. 
 
 That's it! We have the regular expression to format our text file. Fortunately, Python has a useful module [re](https://docs.python.org/3/library/re.html#module-re) to wrangle our text file with regex. 
 
