@@ -94,6 +94,6 @@ print(test_df)
 ![](../images/posts/trashdf.png)
 
 ## Wrapping Up
-As you can see a lot of work goes into getting our data ready to use in for future use. Data doesn't always come in a 
+As you can see a lot of work goes into getting our data ready for future use in downstream applications. Data doesn't always come in a 
 useful or helpful format. Being able to spot and have the tools to wrangle data is thus essential for any aspiring data scientist 
-like myself! I hope you found this article interesting and helpful. 
+like myself! I hope you found this article interesting and helpful. You can find the source code [here](https://github.com/kostyafarber/trash-movie-classifier). 
