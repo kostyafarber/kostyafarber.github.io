@@ -31,7 +31,7 @@ further with whatever comes out of this, the relevant posts will appear below in
 <ul class="posts">
 {% assign count = 0 %}
 {% for post in site.posts %}
-  {% if post.tags contains 'sydneyhouseprices' %}
+  {% if post.tags contains 'trashmovies' %}
     {% if count < 20 %}
       {% assign count = count|plus:1 %}
       <div class="post_info">
