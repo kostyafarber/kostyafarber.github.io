@@ -60,7 +60,7 @@ That's it! We have the regular expression to format our text file. Fortunately, 
 
 ## Re
 
-Now to the juicy part. The code. First we import re and read in our file with the open context manager, write a list comprehension that strips the leading and trailing whitespaces for each line in the text file and save it to list object.
+Now to the juicy part. The code. First we import re and read in our file with the open context manager, write a list comprehension that strips the leading and trailing whitespaces for each line in the text file and save it to a list object.
 
 ```python
 import re
