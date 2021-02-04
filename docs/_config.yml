@@ -57,6 +57,7 @@ sass:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-jupyter-notebook
 
 paginate: 7
 paginate_path: "/blog/page-:num/"

@@ -4,6 +4,7 @@ gem 'jekyll'
 gem "kramdown-parser-gfm"
 gem 'webrick'
 gem 'github-pages'
+gem "jekyll-jupyter-notebook"
 
 group :jekyll_plugins do
   gem 'jekyll-paginate'
