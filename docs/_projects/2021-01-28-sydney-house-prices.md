@@ -22,8 +22,6 @@ was to find data that was close to me in terms of proximity.
 
 
 
-> <img src='../images/projects/sydneyhouseprices/kaggle.png' width=500 />
-> 
 >Kaggle allows users to find and publish data sets, explore and build models in a web-based data-science environment, work with other data scientists and machine learning engineers, and enter competitions to solve data science challenges.
 
 A simple search of *'Sydney'* into the search bar yielded 
@@ -36,8 +34,7 @@ I have learnt many things whilst working on this small project. I primarily util
 I also adhere to coding good practises and conduct some exploratory data analysis, all presented in the Jupyter notebook link below. What I intend to do is write about the various aspects and processes I have come across whilst working on this data science project. The list below will include posts about the
 many topics covered and my understanding of them.
 
-For example, the post below is a short description of why I started this blog. For now, this [link](https://nbviewer.jupyter.org/github/kostyafarber/sydneyhouseprices/blob/master/notebooks/sydney_choropleth.ipynb) is the Jupyter notebook
-with the relevant code and concise analyses. 
+For example, the post below is a short description of why I started this blog. 
 
 <ul class="posts">
 {% assign count = 0 %}
@@ -56,33 +53,15 @@ with the relevant code and concise analyses.
 {% endfor %}
 </ul>
 
-Also, check out the code that was the inspiration for this project an interactive choropleth map coded in Plotly showing the median house prices around Sydney.
+The relevant project content can be found below:
 
-```python
-data = px.choropleth_mapbox(geo_house_prices, 
-                            geojson=geo_house_prices.geometry,
-                            locations=geo_house_prices.index, color='sellPrice',
-                            color_continuous_scale="viridis",
-                            center = {"lat": cfg.map.lat, "lon": cfg.map.lon},
-                            range_color=(0, 2000000),
-                            labels= {"sellPrice":"Selling Price","suburb":"Suburb"},
-                            mapbox_style='open-street-map',
-                            opacity=0.5
-                          )
+***Jupyter Notebook***  with the relevant code, graphs and analyses:
+- [Sydney House Prices Jupyter notebook](https://nbviewer.jupyter.org/github/kostyafarber/sydneyhouseprices/blob/master/notebooks/sydney_choropleth.ipynb)
+  
+A dashboard created with the ***Dash***, a productive Python framework for building *web analytic applications*. Written on top of ***Flask, Plotly. js, and React. js***, Dash is ideal for building data visualization apps with highly custom user interfaces in pure Python.
+It is deployed on **Heroku** a cloud platform as a service supporting several programming languages
+- [Dashboard created with Dash](https://sydneyhouseprices-dashboard.herokuapp.com/) 
 
 
-fig = go.Figure(data = data)
 
-
-fig.update_layout(margin={"r":0,"t":50,"l":0,"b":0})
-fig.update_geos(fitbounds="locations", visible=False)
-
-pyo.plot(fig)
-fig.show()
-```
-<header>
-
-{% include sydneymedian.html %}
-
-</header>
 

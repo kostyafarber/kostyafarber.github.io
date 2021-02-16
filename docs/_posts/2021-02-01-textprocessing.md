@@ -1,5 +1,5 @@
 ---
-title: Using Regular Expressions to Preprocess a Text File in Python.
+title: Using Regular Expressions to Preprocess a Text File in Python
 date: 2021-01-28 
 description: When data isn't in a format that makes life easy.
 featured_image: '/images/posts/txt_109.jpg' 
