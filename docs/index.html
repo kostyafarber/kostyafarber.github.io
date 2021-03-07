@@ -1,9 +1,10 @@
 ---
 layout: default
-overtitle: A collection of projects I've been working on
-title: Projects
-description:
+overtitle: + Blog Posts
+title: Project Portfolio
+description: Welcome to my website. Here you can find a portfolio of my projects and blog posts.
 ---
+
 <div class="page-home">
 
 	{% if site.data.settings.hero_settings.background_image %}
@@ -15,8 +16,12 @@ description:
 			<div class="title">
 				<h1>{{ page.title }}</h1>
 				<p class="subtitle">{{ page.overtitle }}</p>
-
 			</div>
+
+			<p class="intro subtitle--light">
+				{{ page.description }}
+				<a href="#" class="hero__cta button--fill contact-trigger js-contact">Get In Touch</a>
+			</p>
 		</div>
 	</section>
 
@@ -32,7 +37,7 @@ description:
 
 				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
 					{% for image in project.gallery_images %}
-					<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}"width="200"></a>
+					<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
 					{% endfor %}
 				</div>
 
