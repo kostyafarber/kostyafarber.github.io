@@ -51,7 +51,7 @@ A simple script to remove those pesky packages. A couple of things about this sc
 * Your second command-line argument should be the name of your environment file (i.e python script.py environment.yml).
 * This will overwrite the current existing environment.yml. If you need to recover the original you can just run the conda commands again.
 
-<script src="https://gist.github.com/kostyafarber/1f678d5183e5e6ede2007af244c97c97.js"></script>
+{ % gist 1f678d5183e5e6ede2007af244c97c97 % }
 
 ### Conclusion
 
