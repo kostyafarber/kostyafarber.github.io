@@ -40,6 +40,11 @@ defaults:
     values:
       layout: "projects"
 
+  - scope:
+      path: "img"
+    values:
+      image: true
+
 markdown: kramdown
 highlighter: rouge
 
@@ -58,6 +63,8 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-jupyter-notebook
+  - jekyll-gist
+
 
 paginate: 7
 paginate_path: "/blog/page-:num/"

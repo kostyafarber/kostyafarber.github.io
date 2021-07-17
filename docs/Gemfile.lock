@@ -264,6 +264,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll
+  jekyll-gist
   jekyll-jupyter-notebook
   jekyll-paginate
   jekyll-sitemap
