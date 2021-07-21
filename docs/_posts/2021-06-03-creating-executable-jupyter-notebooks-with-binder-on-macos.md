@@ -2,7 +2,7 @@
 layout:	post
 title:	"Creating Executable Jupyter Notebooks with Binder on macOS"
 date:	2021-06-03
-featured_image: '/img/0*dcNBK_DWHzb5Cthl'
+featured_image: '/img/stamp.jpeg'
 ---
 
 One of the foundational pillars of the scientific method is **reproducibility**. One of the advantages of reproducibility is transparency and the ability for other experimenters to attempt to verify your results or play around with the experiment that you created.
@@ -36,12 +36,12 @@ The problem consists of packages that are too specific and OS-dependent. For the
 
 For the second problem, on Mac OS specifically, there are a few packages that are known to cause problems. These include:
 
-* libcxxabi=4.0.1
+* `libcxxabi=4.0.1`
 * appnope=0.1.0
 * libgfortran=3.0.1
 * libcxx=4.0.1
 
-For example, appnope=0.1.0 exists only on Mac OS so when Ubuntu tries to find this package; it won’t be able to and the build will fail. So we need to manually prune the configuration file for these packages. Unfortunately --no-builds doesn’t remove all these packages nor any conda command for that matter at the time of writing.
+For example, `appnope=0.1.0` exists only on Mac OS so when Ubuntu tries to find this package; it won’t be able to and the build will fail. So we need to manually prune the configuration file for these packages. Unfortunately --no-builds doesn’t remove all these packages nor any conda command for that matter at the time of writing.
 
 Manually finding these packages, whilst not too tedious, is better made to be automatically removed. I created a python script below that will remove these packages from a **YAML** configuration file.
 
@@ -51,7 +51,27 @@ A simple script to remove those pesky packages. A couple of things about this sc
 * Your second command-line argument should be the name of your environment file (i.e python script.py environment.yml).
 * This will overwrite the current existing environment.yml. If you need to recover the original you can just run the conda commands again.
 
-<script src="https://gist.github.com/kostyafarber/1f678d5183e5e6ede2007af244c97c97.js"></script>
+```python
+import sys
+import yaml
+import re
+
+with open(sys.argv[1], mode='r') as file:
+    environment = yaml.safe_load(file)
+
+    pattern = '.*libgfortran.*|.*appnope.*|.*libcxx.*'
+
+    for package in environment['dependencies']:
+        if isinstance(package, str):
+            if re.search(pattern, package):
+
+                environment['dependencies'].remove(package)
+
+                print("Match found, {} removed".format(package))
+
+with open(sys.argv[1], mode='w') as yml:
+    yaml.dump(environment, yml)
+```
 
 ### Conclusion
 
