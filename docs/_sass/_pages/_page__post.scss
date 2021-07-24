@@ -23,6 +23,11 @@
     margin: auto;
   }
 
+  .project__image {
+    width: 50%;
+    margin:auto;
+  }
+
   .post__content.highlight-first p:first-child {
     @extend .subtitle--light;
     line-height: 36px;

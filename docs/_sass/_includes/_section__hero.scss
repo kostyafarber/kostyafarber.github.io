@@ -7,7 +7,7 @@
 
 .hero {
 	position: relative;
-	padding: 40px 0 160px;
+	padding: 1000px 0 160px;
 
 	.wrap {
 		grid-gap: 0;
@@ -58,15 +58,9 @@
 }
 
 .hero__background {
-	display: block;
-	position: absolute;
-	top: 0px;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: -1;
-	max-width: 190%;
-	display: none;
-
+    height: auto;
+    width: auto;
+    max-height: 1000px;
 	@include mq(tabletp) {
 		display: block;
 	}

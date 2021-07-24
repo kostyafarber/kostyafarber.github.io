@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 description: Made includes a beautiful grid-based blog with pagination.
-featured_image: /images/social.jpg
+featured_image: images/3.svg
 categories: First
 ---
 
@@ -11,6 +11,7 @@ categories: First
 		<div class="wrap">
 			<h1 class="header__title">Blog</h1>
 			<p class="header__subtitle subtitle--light">Find out what I've been up to through my latest blog posts.</p>
+			<img src="{{ page.featured_image | relative_url }}" class="blog__image">
 		</div>
 	</header>
 

@@ -5,24 +5,22 @@ date:	2021-06-03
 featured_image: '/img/stamp.jpeg'
 ---
 
-One of the foundational pillars of the scientific method is **reproducibility**. One of the advantages of reproducibility is transparency and the ability for other experimenters to attempt to verify your results or play around with the experiment that you created.
+#### Reproducibility
+One of the foundational pillars of the scientific method is **reproducibility**. One of the advantages of reproducibility is transparency and the ability for other experimenters to attempt to verify your results or play around with the experiment that you created. The analogous method in which we create reproducibility in a computing context is by creating virtual environments. This tutorial will be using [**Conda**](https://docs.conda.io/en/latest/), a package, dependency and environment management system that is popular in the data science community.
+#### Jupyter Notebooks
+[Jupyter Notebooks](https://jupyter.org/) are a popular way for scientists to explore their data. It provides a way to show your results alongside your code. Users may download your notebook and play around with your code and try replicate your results. 
 
-The analogous method in which we create reproducibility in a computing context is by creating virtual environments. This tutorial will be using [**Conda**](https://docs.conda.io/en/latest/), a package, dependency and environment management system that is popular in the data science community.
+The key for this to work however, is making sure the user is able to run the notebook on their machine (Windows, Mac or Linux). The first step in the process is making sure you create a virtual environment and download all the packages and dependencies for your project there. This is mainly to ensure that the user is able to determine exactly what packages and versions they need to run your notebook. They can install those packages into their environment easily with this information. 
 
-[Jupyter Notebooks](https://jupyter.org/) are a popular way for scientists to explore their data. It provides a way to show your results alongside your code. Users may download your notebook and play around with your code and try replicate your results.
-
-The key for this to work however, is making sure the user is able to run the notebook on their machine (Windows, Mac or Linux). The first step in the process is making sure you create a virtual environment and download all the packages and dependencies for your project there. This is mainly to ensure that the user is able to determine exactly what packages and versions they need to run your notebook. They can install those packages into their environment easily with this information.
-
-However we can take this one step further. Instead of making the user replicate the environment on their machine, we may host our environment online and create a fully executable notebook. This makes it even easier and more accessible for others to experiment with your code and reproduce your computing environment and results.
+However, we can take this one step further. Instead of making the user replicate the environment on their machine, we may host our environment online and create a fully executable notebook. This makes it even easier and more accessible for others to experiment with your code and reproduce your computing environment and results.
 
 #### The Binder Project
+[Binder](https://jupyter.org/binder) is exactly that. The Binder project offers an easy place to share computing environments to everyone. It allows users to specify custom environments and share them with a single link. Use-cases involve workshops, scientific workflows and streamline sharing among teams. 
 
-[Binder](https://jupyter.org/binder) is exactly that.
+![](/img/1*FEiQ3UjmMmpYY3t9m5Pf1g.gif)
 
-The Binder project offers an easy place to share computing environments to everyone. It allows users to specify custom environments and share them with a single link. Use-cases involve workshops, scientific workflows and streamline sharing among teams.
 The Binder Project builds tools that reward best-practices in reproducible data science by utilizing community-developed standards for reproducibility. When repositories follow these best-practices and are hosted in an online repository, then Binder automatically builds a linkable environment anybody can access.Binder offers a way to extend that reproducibility and make it even easier to recreate computing environments with a single link. Binder conveniently is able to use repositories with Jupyter Notebooks hosted on [GitHub](https://github.com/) to create shareable environments. **It is as easy as copying the link into a web browser. However your operating system might make it a tad harder.**
 
-![](/img/1*FEiQ3UjmMmpYY3t9m5Pf1g.gif)Image by author.
 
 #### Docker, Operating Systems and Dependencies
 
@@ -37,19 +35,19 @@ The problem consists of packages that are too specific and OS-dependent. For the
 For the second problem, on Mac OS specifically, there are a few packages that are known to cause problems. These include:
 
 * `libcxxabi=4.0.1`
-* appnope=0.1.0
-* libgfortran=3.0.1
-* libcxx=4.0.1
+* `appnope=0.1.0`
+* `libgfortran=3.0.1`
+* `libcxx=4.0.1`
 
-For example, `appnope=0.1.0` exists only on Mac OS so when Ubuntu tries to find this package; it won’t be able to and the build will fail. So we need to manually prune the configuration file for these packages. Unfortunately --no-builds doesn’t remove all these packages nor any conda command for that matter at the time of writing.
+For example, `appnope=0.1.0` exists only on Mac OS so when Ubuntu tries to find this package; it won’t be able to and the build will fail. So we need to manually prune the configuration file for these packages. Unfortunately `--no-builds` doesn’t remove all these packages nor any conda command for that matter at the time of writing.
 
 Manually finding these packages, whilst not too tedious, is better made to be automatically removed. I created a python script below that will remove these packages from a **YAML** configuration file.
 
 A simple script to remove those pesky packages. A couple of things about this script:
 
-* Make sure that the script.py file is in the directory that includes your environment.yml file.
-* Your second command-line argument should be the name of your environment file (i.e python script.py environment.yml).
-* This will overwrite the current existing environment.yml. If you need to recover the original you can just run the conda commands again.
+* Make sure that the `script.py` file is in the directory that includes your `environment.yml` file.
+* Your second command-line argument should be the name of your environment file (i.e `python script.py` environment.yml).
+* This will overwrite the current existing `environment.yml`. If you need to recover the original you can just run the conda commands again.
 
 ```python
 import sys

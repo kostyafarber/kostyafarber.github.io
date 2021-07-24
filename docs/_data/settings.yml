@@ -1,26 +1,24 @@
 basic_settings:
-  site_title: The Art and Science of Programming
+  site_title: Kostya Farber
   favicon_image: /images/puzzle.png
 
 header_settings:
   logo_image: /images/logo.png
   logo_width: 125
 
-
+hero_settings:
+  background_image: /images/7.svg
 
 menu_settings:
   menu_items:
-    - title: 'Projects'
-      url: '/'
     - title: 'Blog'
       url: '/blog/'
+    - title: 'Projects'
+      url: '/projects'
 
 footer_settings:
-  logo_image:
+  site_title: Kostya
   tagline: For the love of Lovelace, embrace poetical science.
-
-hero_settings:
-  background_image:
 
 post_settings:
   grid_spacing: 10
@@ -145,10 +143,10 @@ font_settings:
   p:
     size: 18
     size_small: 17
-    weight: 400
-    letter_spacing: 0.04
+    weight: 300
+    letter_spacing: 0.02
     letter_spacing_small: 0
-    line_height: 28
+    line_height: 40
   p_small:
     size: 16
     size_small: 15
