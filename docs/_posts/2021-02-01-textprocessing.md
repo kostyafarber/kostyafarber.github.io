@@ -1,9 +1,10 @@
 ---
 title: Using Regular Expressions to Preprocess a Text File in Python
 date: 2021-01-28 
-description: When data isn't in a format that makes life easy.
+description: How to use Regular Expressions and Python to wrangle an iPhones Notes text file for data analysis.
 featured_image: '/images/posts/txt_109.jpg' 
-tags: trashmovies
+tags: python data-analysis regular-expressions pandas text
+author: Kostya Farber
 ---
 
 ## Data Wrangling

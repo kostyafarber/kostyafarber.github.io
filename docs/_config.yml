@@ -77,9 +77,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-target-blank
 
-
-
-
 paginate: 7
 paginate_path: "/blog/page-:num/"
 

@@ -1,8 +1,11 @@
 ---
 layout:	post
 title:	"Creating Executable Jupyter Notebooks with Binder on macOS"
+description: A discussion of why Jupyter Notebooks are useful and how to fix errors with Binder builds online. 
 date:	2021-06-03
 featured_image: '/img/stamp.jpeg'
+tags: jupyter-notebook binder conda yml python 
+author: Kostya Farber
 ---
 
 #### Reproducibility
