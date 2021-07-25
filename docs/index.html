@@ -4,17 +4,10 @@ title: The Art and Science of Programming
 description: The home landing page on Kostya Farber's personal website. Includes a summary about Kostya and contact information.
 ---
 
-<div class="page-home">
+<div class="page-home" >
 
-	<div class="wrap grid">
-			<div class="title">
-			</div>
+	<div>
+		{% include section__about.html %}
 	</div>
-	{% if site.data.settings.hero_settings.background_image %}
-	<img src="{{ site.data.settings.hero_settings.background_image | relative_url }}" class="hero__background" draggable="false" alt="Hello There">
-	{% endif %}
-
-	{% include section__about.html %}
-
 
 </div>
