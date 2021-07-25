@@ -14,7 +14,9 @@ menu_settings:
     - title: 'Blog'
       url: '/blog/'
     - title: 'Projects'
-      url: '/projects'
+      url: '/projects/'
+    - title: 'Notebooks'
+      url: '/notebooks/'
 
 footer_settings:
   site_title: Kostya

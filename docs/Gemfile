@@ -6,6 +6,7 @@ gem 'webrick'
 gem 'github-pages'
 gem "jekyll-jupyter-notebook"
 gem 'jekyll-gist'
+gem 'jekyll-seo-tag'
 
 group :jekyll_plugins do
   gem 'jekyll-paginate'

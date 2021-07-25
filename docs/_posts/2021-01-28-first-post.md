@@ -1,9 +1,10 @@
 ---
 title: Why Should I Start a Blog?
 date: 2021-01-28 
-description: A short musing on why I am starting a blog 
+description: A post about why I should start a blog.
 featured_image: '/images/posts/storytelling.jpg' 
-tags: sydneyhouseprices
+tags: blogging 
+author: Kostya Farber
 ---
 Learning through Contemplative Writing
 ==============================

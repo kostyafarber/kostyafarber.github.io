@@ -14,6 +14,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:slug
+  notebooks:
+    output: true
+    permalink: /notebooks/:slug
 
 defaults:
   -
@@ -45,6 +48,12 @@ defaults:
     values:
       image: true
 
+  - scope:
+      path: ""
+      type: "notebooks"
+    values:
+        layout: "notebook"
+
 markdown: kramdown
 highlighter: rouge
 
@@ -64,6 +73,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-jupyter-notebook
   - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+
 
 
 paginate: 7

@@ -267,6 +267,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-jupyter-notebook
   jekyll-paginate
+  jekyll-seo-tag
   jekyll-sitemap
   kramdown-parser-gfm
   webrick
