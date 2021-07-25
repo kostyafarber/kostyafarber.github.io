@@ -7,13 +7,10 @@ categories: First
 ---
 
 <div class="page-blog">
-	<header class="header--single">
-		<div class="wrap">
-			<h1 class="header__title">Blog</h1>
-			<p class="header__subtitle subtitle--light">Find out what I've been up to through my latest blog posts.</p>
-			<img src="{{ page.featured_image | relative_url }}" class="blog__image">
+
+		<div>
+			{% include section__blog.html %}
 		</div>
-	</header>
 
 	<section class="all-posts">
 		<div class="wrap">

@@ -9,19 +9,9 @@ author: Kostya Farber
 
 <div class="page-post">
 
-	<header class="post__header header--single">
-
-		<div class="wrap">
-			<h1 class="header__title">Projects</h1>
-			<p class="header__subtitle subtitle--light">What I've Been Working On Lately.</p>
-			<img src="{{ page.featured_image | relative_url }}" class="project__image">
-
-			<h1 class="post__title">{{ page.title }}</h1>
-
+		<div>
+			{% include section__projects.html %}
 		</div>
-
-
-	</header>
 
 	<section class="listing">
 		<div class="wrap">

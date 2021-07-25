@@ -1,0 +1,19 @@
+<section class="about">
+  {% if include.divider == true %}
+    <div class="wrap"><hr/></div>
+    {% endif %}
+  <div class="wrap grid">
+
+    <div class="about__image">
+      <img src="{{ '/images/1.svg' | relative_url }}" alt="">
+
+    </div>
+
+    <div class="about__content">
+      <h2 class="title">Documenting my process.</h2>
+      <p class="subtitle subtitle--light">
+        Can't do data science without a Jupyter Notebook.
+      </p>
+    </div>
+  </div>
+</section>

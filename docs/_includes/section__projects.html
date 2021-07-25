@@ -1,0 +1,19 @@
+<section class="about">
+  {% if include.divider == true %}
+    <div class="wrap"><hr/></div>
+    {% endif %}
+  <div class="wrap grid">
+
+    <div class="about__image">
+      <img src="{{ '/images/5.svg' | relative_url }}" alt="">
+
+    </div>
+
+    <div class="about__content">
+      <h2 class="title">What happens when I have spare time. </h2>
+      <p class="subtitle subtitle--light">
+        Some projects that I've worked on.
+      </p>
+    </div>
+  </div>
+</section>
