@@ -1,5 +1,6 @@
 ---
 layout: default
+description: The home landing page on Kostya Farber's personal website. Includes a summary about Kostya and contact information.
 ---
 
 <div class="page-home">
@@ -11,7 +12,7 @@ layout: default
 			</div>
 	</div>
 	{% if site.data.settings.hero_settings.background_image %}
-	<img src="{{ site.data.settings.hero_settings.background_image | relative_url }}" class="hero__background" draggable="false">
+	<img src="{{ site.data.settings.hero_settings.background_image | relative_url }}" class="hero__background" draggable="false" alt="Hello There">
 	{% endif %}
 
 	{% include section__about.html %}
