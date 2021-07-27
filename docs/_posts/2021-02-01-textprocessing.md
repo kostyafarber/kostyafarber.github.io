@@ -8,6 +8,7 @@ author: Kostya Farber
 ---
 
 ## Data Wrangling
+
 An integral part of the Data Science process is _data wrangling_. This essentially means modifying data in such a way that makes it '_programming language friendly_'. What I mean by this is transforming the data, so it works well with the libraries that we want to use to manipulate, visualise and model the data with. In more specific terms, data wrangling  is the:
 
 > process of transforming and mapping of data from one 'raw' data form into another format with the intent of making it more
@@ -31,6 +32,7 @@ package. \
 The data wrangling task at hand required pattern matching string manipulation. Enter **Regular Expressions**.
 
 ## Regular Expressions
+
 A **regular expression** or better known as **regex** is:
 
 > a sequence of characters that define a search pattern. 
@@ -47,13 +49,13 @@ The next step is to actually write the search pattern. There are numerous exampl
 my best to explain my search pattern step by step. 
 
 ## The Search Pattern
+
 ```python
 \-.*|^\d*.
 ``` 
 
 The first character, known as a **metacharacter**, are characters that serve special functions. The dash needs to be escaped by the backslash **`(\)`** to match the dash **`(-)`** character, otherwise regex will interpret the dash as signifying a range of characters.
 The period **`(.)`** metacharacter is a **wildcard** character. A wildcard is a placeholder represented by a single character which can be interpreted as a number of literal characters. This will match any character but the newline character **`(\n)`**. The next character is also a wildcard **`(*)`** and will match the character to its left zero or more times. This first search pattern will therefore match everything including and after the dashes and solves the first part of the pattern.
-<br>
 
 The **`(|)`** character is a logical operator that signifies **either or**. This will match the expression to its left **or** the expression to its right. The **`(^)`** tells regex to start the search at the start of the string or line, whilst the metacharacter **`(/d)`** will match any digits, followed by the wildcard  **`(*)`** for zero or more occurrences. Finally, the  **`(.)`** will match any single character after all the digits, in our case the period. 
 
@@ -70,6 +72,7 @@ with open("trash-movie-list.txt", ) as file:
     # read txt file, convert to list
     lines = [x.strip() for x in file.readlines()]
 ```
+
 We save the regex search pattern as a string and create another variable to replace matched patterns with an empty string. We use the sub method from the re module to replace all matched sequences with an empty string. We wrap this in another list comprehension and strip the lines again.
 
 ```python
@@ -95,6 +98,7 @@ print(test_df)
 ![](../images/posts/trashdf.png)
 
 ## Wrapping Up
+
 As you can see a lot of work goes into getting our data ready for future use in downstream applications. Data doesn't always come in a 
 useful or helpful format. Being able to spot and have the tools to wrangle data is thus essential for any aspiring data scientist 
 like myself! I hope you found this article interesting and helpful. You can find the source code [here](https://github.com/kostyafarber/trash-movie-classifier). 
