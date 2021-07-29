@@ -113,3 +113,40 @@
     transform: scale(0.92);
   }
 }
+
+.socials__item__link__project {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $text-dark-color;
+  color: $background-color;
+
+  &:hover {
+    background: $accent-color;
+    color: $background-color;
+  }
+
+  &:active {
+    transform: scale(0.92);
+  }
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+  }
+img {
+    width: 100%;
+    opacity: 0;
+  }
+}

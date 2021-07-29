@@ -1,6 +1,8 @@
 _site
 .sass-cache
-.jekyll-cache
+.jekyll-cache/*
 .jekyll-metadata
 vendor
 template
+.DS_Store
+.idea/*

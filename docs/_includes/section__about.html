@@ -3,21 +3,59 @@
     <div class="wrap"><hr/></div>
     {% endif %}
   <div class="wrap grid">
-    <div class="about__image" data-tilt>
-      <img src="{{ '/images/7.svg' | relative_url }}" alt="">
-
-      {% include component-socials.html %}
-    </div>
+    
+    <figure class="img-container">
+      <div class="about__image">
+        <img src="{{ '/images/7.svg' | relative_url }}" alt="">
+        {% include component-socials.html %}
+      </div>
+    </figure>
     
     <div class="about__content">
-      <h2 class="title">Hello, my names Kostya. </h2>
-      <p class="subtitle subtitle--light">I am currently working as a Forensic Data Analyst at KPMG, living in Sydney Australia.
-      </p>
-      <p>I graduated from the University of Sydney majoring in Finance and Economics. An endless curiosity for the arcane and love for technology has driven my passion for programming.</p>
-      <p>I like coding in any language and love exploring, manipulating and extracting insights from data. </p>
-
+      <div id='typed-strings'>
+        <h2 class="title">Hello, <span class="element"></span> </h2>
+        <p class="subtitle subtitle--light">I am currently working as a Forensic Data Analyst at KPMG, living in Sydney, Australia.
+        </p>
+        <p>I graduated from the University of Sydney majoring in Finance and Economics. An endless curiosity for the arcane and love for technology has driven my passion for programming.</p>
+        <p>I like coding in any language and love exploring, manipulating and extracting insights from data. </p>
+    </div>
 
       <a href="#" class="cta button--fill contact-trigger js-contact">Get in Touch</a>
     </div>
   </div>
-</section>
+  
+  <!-- javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var options = {
+      strings: ['I am a Programmer', 'my name is Kostya Farber'],
+      typeSpeed: 40,
+      showCursor: false
+    };
+
+    var typed = new Typed('.element', options);
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/EasePack.min.js"></script>
+
+<script>
+
+  const tl = gsap.timeline();
+
+  const rule = CSSRulePlugin.getRule(".img-container:after");
+
+  tl
+    .to(rule, { duration: 1, width: "100%", ease: "Power2.ease" })
+    .set(rule, { duration: 0, right: 0, left: "unset" })
+    .to(rule, { duration: 1, width: "0%", ease: "Power2.ease" })
+    .to("img", { duration: 0.2, opacity: 1, delay: -1 })
+    .from(".img-container img", {
+      duration: 1,
+      scale: 1.4,
+      ease: "Power2.easeInOut",
+      delay: -1.2
+    });
+
+</script>
