@@ -9,10 +9,10 @@
 
 .button {
   &--text {
-    font-family: $title-font;
-    line-height: 18px;
+    font-family: $body-font;
+    line-height: 1em;
     display: inline-block;
-    font-size: 13px;
+    font-size: 1em;
     color: $text-dark-color;
     font-weight: $button-weight;
     letter-spacing: $button-spacing;
@@ -79,7 +79,7 @@
     @extend .button--text;
     color: white;
     background-color: $accent-color;
-    padding: 13px 20px 14px;
+    padding: 13px 28px 14px;
     border-radius: 40px;
 
     &:hover {

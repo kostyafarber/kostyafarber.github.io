@@ -6,9 +6,12 @@
 			<img src="{{ site.data.settings.footer_settings.logo_image | relative_url }}" class="footer__logo__img">
 		</a>
 		{% else %}
-		<a href="{{ site.baseurl }}/" class="footer__title">
-			{{ site.data.settings.basic_settings.site_title }}
-		</a>
+		<div id="test">
+			<a href="{{ site.baseurl }}/" class="footer__title" data-aos='fade-left' id="test2">
+				{{ site.data.settings.footer_settings.site_title }}
+			</a>
+		</div>
+	
 		{% endif %}
 
 		<div class="footer__copyright">
@@ -20,3 +23,13 @@
 		</div>
 
 	</div>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+  AOS.init();
+</script>
+
+<script src="https://unpkg.com/revealfx@latest/src/revealFx.js"></script>
+
+

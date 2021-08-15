@@ -1,61 +1,107 @@
 <section class="about">
   {% if include.divider == true %}
     <div class="wrap"><hr/></div>
-    {% endif %}
-  <div class="wrap grid">
-    
-    <figure class="img-container">
-      <div class="about__image">
-        <img src="{{ '/images/7.svg' | relative_url }}" alt="">
-        {% include component-socials.html %}
-      </div>
-    </figure>
-    
-    <div class="about__content">
-      <div id='typed-strings'>
-        <h2 class="title">Hello, <span class="element"></span> </h2>
-        <p class="subtitle subtitle--light">I am currently working as a Forensic Data Analyst at KPMG, living in Sydney, Australia.
-        </p>
-        <p>I graduated from the University of Sydney majoring in Finance and Economics. An endless curiosity for the arcane and love for technology has driven my passion for programming.</p>
-        <p>I like coding in any language and love exploring, manipulating and extracting insights from data. </p>
+  {% endif %}
+      <div class="wrap grid">
+        <div class="about__content lax lax_preset_slideX:612:-50 lax_preset_fadeOut:100:0.2">
+            <h1>DATA ANALYST<span class="dot" style="color: #4C60E6;">.</span></h1>
+                <p class="subtitle">Designing <span class="span-subheading" style="font-style: italic; color: #4C60E6;">elegant </span> solutions to complex problems<p>
+                <div class="wrap grid">
+                  <p class="drop_cap">01.</p>
+                  <p class="body-about">
+                    <span class="element"></span>
+                  </p>
+                </div>
+           
+        </div>  
+            <div class="about__image">
+              <figure>
+                <img src="../images/newton2.gif">
+              </figure>
+            </div>  
+
+        </div>
+</section>
+
+<section class="section_about">
+  <div class="wrap grid__2-col">
+    <div class="me__image lax lax_preset_blurIn:300.75:20">
+      <img src="../images/me_writing.png">
     </div>
 
-      <a href="#" class="cta button--fill contact-trigger js-contact">Get in Touch</a>
+
+      <div class="about__image">
+        <h1>ABOUT</h1>
+           <div class="wrap grid__2-col">
+            <p class="drop_cap">02.</p>
+            <p class="body-about">Technology has always been at the forefront of my life. From discovering the Raspberry Pi and hacking it into a pretty media centre and learning how to navigate Linux and a command line along the way, to programming LED's with an Arduino and gaining my first exposure to C++; my yearning to explore the landscape of technology is insatiable.</p>
+            <p class="body-about">Naturally this adventure led me to teach myself Python whilst at university and I was enamored by the vast abilities this gave me to explore the world in an interesting way. I intend to continue my journey in learning and absorbing new advances in technologies and the enjoyment that comes from understanding the world in a deeper way as a result.</p>
+          </div>
+   
     </div>
   </div>
-  
-  <!-- javascript -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    var options = {
-      strings: ['I am a Programmer', 'my name is Kostya Farber'],
-      typeSpeed: 40,
-      showCursor: false
-    };
+</section>
 
-    var typed = new Typed('.element', options);
-  </script>
+ 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/EasePack.min.js"></script>
+  <section>
+		<div class="wrap">
+      <h1>PROJECTS</h1>
+			{% for project in site.projects reversed %}
+
+			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
+
+			<article class="project__preview">
+				<h3 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h3>
+
+				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
+					{% for image in project.home_image %}
+					<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
+					{% endfor %}
+				</div>
+
+				<div class="project__content grid" style="border-color: {{ accent_color }}">
+					<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
+					<p class="project__description --small">
+						{{ project.description }}
+						<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
+							style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View Case Study</a>
+					</p>
+				</div>
+			</article>
+
+			{% endfor %}
+		</div>
+	</section>
+
+
+      
+      
+</section>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="../js/lax.min.js"></script>
 
 <script>
+    window.onload = function () {
+      lax.init()
 
-  const tl = gsap.timeline();
-
-  const rule = CSSRulePlugin.getRule(".img-container:after");
-
-  tl
-    .to(rule, { duration: 1, width: "100%", ease: "Power2.ease" })
-    .set(rule, { duration: 0, right: 0, left: "unset" })
-    .to(rule, { duration: 1, width: "0%", ease: "Power2.ease" })
-    .to("img", { duration: 0.2, opacity: 1, delay: -1 })
-    .from(".img-container img", {
-      duration: 1,
-      scale: 1.4,
-      ease: "Power2.easeInOut",
-      delay: -1.2
-    });
-
+    // Add a driver that we use to control our animations
+      lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+  }
 </script>
+
+<script>
+var typed = new Typed('.element', {
+  // Waits 1000ms after typing "First"
+  strings: ['Hey there, my name is Kostya Farber. I am Forensic Data Analyst currently working at KPMG. I primarily use Python and SQL to explore the vast landscapes of data I come across everyday. I am comfortable with a multiude of tools such as Pandas, Matplotlib, Seaborn, Keras, Scikit-learn, Teradata, MySQL Server, Git, Github and many more.'],
+  showCursor: false,
+  typeSpeed: 20
+});
+</script> 

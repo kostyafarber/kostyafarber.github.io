@@ -41,10 +41,11 @@
 	<!-- Font Embed Code -->
 	{{ site.data.settings.font_settings.font_embed }}
 	{% endif %}
-
 	<!-- Styles -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+	<link rel="stylesheet" href="../css/mocassin.css">
+
 
 	<!-- Icons -->
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js"
@@ -126,6 +127,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="{{ '/js/plugins-min.js' | relative_url }}"></script>
 	<script src="{{ '/js/made-min.js' | relative_url }}"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
 	{% if site.data.settings.advanced_settings.footer_js %}
 	<!-- Extra Footer JS Code -->
 	{{ site.data.settings.advanced_settings.footer_js }}

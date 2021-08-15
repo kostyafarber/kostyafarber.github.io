@@ -2,10 +2,19 @@
 title: What Questionable Movies Share
 subtitle: What do bad movies share? An inquiry into the spirit of bad things.
 description: An analysis of a list me and my friends have compiled over the years whilst watching films that we considered so bad they were good. Suffice to say, not all of them where as funny as we thought. I decided to dig deeper and extract relationships and insights from these films.
-featured_image: '/trash_movies/bad-movies.png'
+featured_image: 'trash_movies/macbookpro-bad.svg'
 gallery_images:
-- /trash_movies/bad-movies.png
+- trash_movies/macbookpro-bad.svg
+home_image: trash_movies/iMac-bad-movies.svg
+project_icons:
+    - url: 'https://github.com/kostyafarber/bad-movies'
+      icon_name: 'github'
 ---
+## Links
+
+<div data-aos="fade-left">
+{% include component-project-links.html %}
+</div>
 
 ## Motivation
 <br>
@@ -27,8 +36,3 @@ movie club is born, and 200+ movies later a rather interesting (to me at least) 
 
 I've always had the idea to create a data science project from our long and silly list, so here it is.
 <br>
-## Links
-
-<a href='https://github.com/kostyafarber/bad-movies'><img src='../images/projects/sydneyhouseprices/github-logo.png' height="250"></a> |
-{: style='border: 0'}
-

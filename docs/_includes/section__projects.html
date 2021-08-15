@@ -4,16 +4,32 @@
     {% endif %}
   <div class="wrap grid">
 
-    <div class="about__image">
-      <img src="{{ '/images/5.svg' | relative_url }}" alt="">
-
-    </div>
-
-    <div class="about__content">
-      <h2 class="title">What happens when I have spare time. </h2>
-      <p class="subtitle subtitle--light">
+    <div class="about__content lax lax_preset_fadeOut:170:0 lax_preset_slideX:354:-34 easeOutQuad">
+      <h1>PROJECTS</h1>
+      <p class="subtitle">
         Some projects that I've worked on.
       </p>
+      <p class="body-about">
+        Data Science. <span style="color:#4C60E6; font-size: 1.5em;">Big Data.</span> Data Analytics. Machine Learning. Natural Language Processing. Artificial Neural Network. N-Grams. Bayesian Inference. Logistic Regression. Standard Deviation. Application Programming Interface. Fuzzy Matching. Bag of Words. Backpropogation. Batch Normalization. Bias-Variance Tradeoff. Big O Notation. Binary Tree. Computer Vision. Data Mining.
+      </p>
     </div>
+    <div class="about__image">
+      <img src="../images/roy.gif" class="lax lax_preset_blurIn:179:12">
+    </div>
+    
   </div>
 </section>
+
+<script src="../js/lax.min.js"></script>
+
+<script>
+  window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+  }
+</script>
+

@@ -4,6 +4,16 @@
 
 // - - - - - - - - - - - - - - - - - -
 
+@font-face {
+  font-family: "Test Founders Grotesk, Bold";
+  src: url("../fonts/founders-grotesk-web-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Test Founders Grotesk, light";
+  src: url("../fonts/founders-grotesk-web-light.woff2") format("woff2");
+}
+
 h1,
 .h1,
 h2,
@@ -106,6 +116,7 @@ h6,
 }
 
 .subtitle {
+  font-family: $body-font;
   font-weight: $subtitle-weight-heavy;
   font-size: $subtitle-size-small;
   letter-spacing: $subtitle-spacing-small;
@@ -163,7 +174,7 @@ blockquote {
   padding: 10px 0 10px 32px;
 
   p {
-    font-family: $title-font;
+    font-family: $body-font;
     font-size: $blockquote-small;
     font-weight: $blockquote-weight;
     letter-spacing: $blockquote-spacing;
@@ -243,4 +254,8 @@ code {
 ::-moz-selection {
   background: $accent-color;
   color: $background-color;
+}
+
+.drop_cap {
+  font-size: 3em;
 }

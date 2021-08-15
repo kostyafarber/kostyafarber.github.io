@@ -13,7 +13,10 @@ layout: default
 			<h2 class="post__subtitle subtitle--light">{{ page.subtitle }}</h2>
 		</div>
 
-		<img src="{{ '/images/projects/' | relative_url}}{{ page.featured_image }}" class="post__featured-image">
+		<div data-aos='fade-left'>
+			<img src="{{ '/images/projects/' | relative_url}}{{ page.featured_image }}" class="post__featured-image">
+		</div>
+		
 
 	</header>
 
@@ -30,7 +33,21 @@ layout: default
 
 	</section>
 
-	{% include section__about.html divider=true %}
+	{% include footer.html divider=true%}
 
+
+
+
+	
 	<script src="../js/plugins/owl.js"></script>
-</div>
+	
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+	
+	<script>
+		AOS.init();
+	  </script>
+	  <script>
+

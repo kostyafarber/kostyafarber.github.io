@@ -4,16 +4,23 @@
     {% endif %}
   <div class="wrap grid">
 
-    <div class="about__image">
-      <img src="{{ '/images/3.svg' | relative_url }}" alt="">
-
-    </div>
-
     <div class="about__content">
-      <h2 class="title">Where my blog lives. </h2>
-      <p class="subtitle subtitle--light">
+      <h1>WHERE MY BLOG LIVES.</h1>
+      <p class="subtitle">
         A collection of things I like to write about.
       </p>
     </div>
+
+    <div class="about__image">
+      <img src="../images/5black.svg">
+    </div>
   </div>
 </section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+<script>
+  var image = document.getElementsByClassName('about__image');
+  new simpleParallax(image);
+</script>

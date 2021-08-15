@@ -3,9 +3,10 @@ title: Sydney Property Prices Dashboard
 layout: projects
 subtitle: A Dashboard Built From Scratch
 description: A data science project that explores the Sydney property market across different suburbs using a dataset from Kaggle.
-featured_image: '/sydneyhouseprices/dashboard.png'
-gallery_images:
-- /sydneyhouseprices/dashboard.png
+featured_image: 'sydneyhouseprices/macbookpro-dash.svg'
+home_image: 'sydneyhouseprices/iMac-dashboard.svg'
+gallery_images: 
+    -  'sydneyhouseprices/macbookpro-dash.svg'
 project_icons:
     - url: 'https://sydneyhouseprices-dashboard.herokuapp.com/'
       icon_name: 'heroku'
@@ -15,14 +16,20 @@ project_icons:
 
 ### Links
 ----
+<div data-aos="fade-left">
 {% include component-project-links.html %}
-
+</div>
 ### Technologies
 
+<div data-aos="fade-right">
 {% include post-components/gallery.html
-	columns = 2
-	images = "/images/techstack/matplotlib.svg, /images/techstack/pandas.svg, /images/techstack/heroku.svg, /images/techstack/github.svg, /images/techstack/dash.svg"
+	columns = 4
+  full_width = true
+	images = "/images/techstack/matplotlib.svg, /images/techstack/pandas.svg, /images/techstack/heroku.svg, /images/techstack/github.svg, /images/techstack/dash.svg, /images/techstack/numpy.svg"
 %}
+</div>
+
+
 
 ### The Motivation
 
