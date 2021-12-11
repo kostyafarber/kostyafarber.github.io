@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'Test Founders Grotesk light', sans-serif;
-  src: url("../fonts/founders-grotesk-web-light.woff2");
+  src: url("../fonts/founders-grotesk-web-light.woff2") ;
 }
 
 h1,
@@ -27,7 +27,7 @@ h5,
 h6,
 .h6,
 .subtitle {
-  font-family: Test Founders Grotesk bold, sans-serif;
+  font-family: 'Test Founders Grotesk bold', sans-serif;
   ;
   color: $text-dark-color;
 }
