@@ -6,12 +6,11 @@
 
 @font-face {
   font-family: "Test Founders Grotesk bold", sans-serif;
-  src: local({{ '/fonts/founders-grotesk-web-bold.woff2' | relative_url}}) format('woff2');
+  src: local('founders-grotesk-web-bold.woff2') format('woff2');
 }
-
 @font-face {
   font-family: "Test Founders Grotesk light", sans-serif;
-  src: local('/docs/fonts/founders-grotesk-web-light.woff2') format('woff2');
+  src: local('founders-grotesk-web-light.woff2') format('woff2');
 }
 
 h1,
