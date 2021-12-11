@@ -4,6 +4,10 @@
 
 // - - - - - - - - - - - - - - - - - -
 
+.section_title {
+  height: 100vh;
+}
+
 .page,
 .page__content {
 	width: 100%;
@@ -17,6 +21,21 @@
   max-width: 1200px;
 }
 
+.title {
+  display: flex;
+  flex-flow: column;
+  row-gap: 2vh;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 1vh;
+
+  &__socials {
+  @extend .title;
+  align-items: center;
+  }
+}
+
 .grid {
 	display: grid;
 	grid-gap: 30px;
@@ -24,6 +43,7 @@
 	&__2-col {
     @extend .grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 5vw;
   }
 
   &__3-col {
@@ -39,3 +59,4 @@
 .locked {
   overflow: hidden;
 }
+

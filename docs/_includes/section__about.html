@@ -1,82 +1,33 @@
-<section class="hero">
-  {% if include.divider == true %}
-    <div class="wrap"><hr/></div>
-  {% endif %}
+<section>
+	<!-- <div class="title">
+		<h1 class="title_font">Data Analyst <span style="color: #4C60E6;">.</span></h1>
+	</div> -->
+	<div class="title">
+		<h1 class='title_font'>Data Analyst, based in Sydney, with a focus on operating at the intersection of science and <span style="color: #4C60E6;">art.</span></h1>
+		<p>Finding <span style="color: #4C60E6;">elegant</span> solutions to complex problems.</p>
+		<!-- <img src="../images/newton2.gif"> -->
+	</div>
+	<div class="title__socials">
+		{% include component-socials.html %}
+	</div>
+</section>
+
+<section class='section_projects'>
   
-    <img src="../images/newton2.gif" class="newton__image">
+	{% for project in site.projects reversed %}
+  
+	<div class='project_item'>            
+	  <h4 class='project_item_number'>{{ forloop.index | prepend: '00' | slice: -2, 2 }}</h4>
 
-      <div class="wrap">
-        <div class="about__content">
-            <h1>DATA ANALYST<span class="dot" style="color: #4C60E6;">.</span></h1>
-                <p class="subtitle">Designing <span class="span-subheading" style="font-style: italic; color: #4C60E6;">elegant </span> solutions to complex problems<p>
-                <div class="wrap grid">
-                  <p class="drop_cap">01.</p>
-                  <p class="body-about">
-                    <span class="element"></span>
-                  </p>
-                </div>
-           
-        </div>  
-        </div>
-</section>
-
-<section class="hero">
-  <div class="me__image">
-    <img src="../images/me_writing.png">
-  </div>
-      <div class="about__image">
-        <h1>ABOUT</h1>
-           <div class="wrap grid__2-col">
-            <p class="drop_cap">02.</p>
-            <p class="body-about">Technology has always been at the forefront of my life. From discovering the Raspberry Pi and hacking it into a pretty media centre and learning how to navigate Linux and a command line along the way, to programming LED's with an Arduino and gaining my first exposure to C++; my yearning to explore the landscape of technology is insatiable.</p>
-            <p class="body-about">Naturally this adventure led me to teach myself Python whilst at university and I was enamored by the vast abilities this gave me to explore the world in an interesting way. I intend to continue my journey in learning and absorbing new advances in technologies and the enjoyment that comes from understanding the world in a deeper way as a result.</p>
-          </div>
-   
-    </div>
-  </div>
-</section>
-
- 
-
-  <section>
-		<div class="wrap">
-      <h1>PROJECTS</h1>
-			{% for project in site.projects reversed %}
-
-			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
-
-			<article class="project__preview">
-				<h3 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h3>
-
-				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
-					{% for image in project.home_image %}
-					<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
-					{% endfor %}
-				</div>
-
-				<div class="project__content grid" style="border-color: {{ accent_color }}">
-					<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
-					<p class="project__description --small">
-						{{ project.description }}
-						<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
-							style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View Case Study</a>
-					</p>
-				</div>
-			</article>
-
-			{% endfor %}
-		</div>
-	</section>
-
-
-      
-      
-</section>
-
-
-
-
-
+	  <div>
+		<h3 class='project_font'><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+	  </div>
+	</div>
+	<hr>
+  
+	{% endfor %}
+  </section>
+  
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="../js/lax.min.js"></script>
 
@@ -94,8 +45,8 @@
 <script>
 var typed = new Typed('.element', {
   // Waits 1000ms after typing "First"
-  strings: ['Hey there, my name is Kostya Farber. I am Forensic Data Analyst currently working at KPMG. I primarily use Python and SQL to explore the vast landscapes of data I come across everyday. I am comfortable with a multiude of tools such as Pandas, Matplotlib, Seaborn, Keras, Scikit-learn, Teradata, MySQL Server, Git, Github and many more.'],
+  strings: ['elegant'],
   showCursor: false,
-  typeSpeed: 20
+  typeSpeed: 100
 });
 </script> 

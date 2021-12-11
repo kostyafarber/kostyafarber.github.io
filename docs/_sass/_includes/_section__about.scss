@@ -4,6 +4,16 @@
 
 // - - - - - - - - - - - - - - - - - -
 
+.section_projects {
+  margin-top: 8vh;
+}
+
+@media (max-width: 375px)  {
+  .body-about {
+      font-size: 0.7em;
+    }
+  }
+
 .body-about {
   font-size: 1em;
   line-height: 1em;
@@ -96,6 +106,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: center;
+  margin-top: 5vh;
 }
 
 .socials__item {

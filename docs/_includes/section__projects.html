@@ -1,23 +1,17 @@
-<section class="about">
-  {% if include.divider == true %}
-    <div class="wrap"><hr/></div>
-    {% endif %}
-  <div class="wrap grid">
-
-    <div class="about__content lax lax_preset_fadeOut:170:0 lax_preset_slideX:354:-34 easeOutQuad">
-      <h1>PROJECTS</h1>
-      <p class="subtitle">
-        Some projects that I've worked on.
-      </p>
-      <p class="body-about">
-        Data Science. <span style="color:#4C60E6; font-size: 1.5em;">Big Data.</span> Data Analytics. Machine Learning. Natural Language Processing. Artificial Neural Network. N-Grams. Bayesian Inference. Logistic Regression. Standard Deviation. Application Programming Interface. Fuzzy Matching. Bag of Words. Backpropogation. Batch Normalization. Bias-Variance Tradeoff. Big O Notation. Binary Tree. Computer Vision. Data Mining.
-      </p>
-    </div>
-    <div class="about__image">
-      <img src="../images/roy.gif" class="lax lax_preset_blurIn:179:12">
-    </div>
-    
+<section>
+  <div class='project_heading'>
+    <h2>Recent Work.</h2>
   </div>
+
+  {% for project in site.projects reversed %}
+
+  <div class='project_item'>            
+    <h4 class='project_item_number'>{{ forloop.index | prepend: '00' | slice: -2, 2 }}</h4>
+    <h3 class='project_font'><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+  </div>
+  <hr>
+
+  {% endfor %}
 </section>
 
 <script src="../js/lax.min.js"></script>

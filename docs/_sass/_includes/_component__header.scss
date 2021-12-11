@@ -177,9 +177,9 @@
   .menu__cta__link {
     font-family: $body-font;
     font-size: $h4-size-small;
-    font-weight: $h4-weight;
+    font-weight: normal;
     line-height: $h4-lineheight;
-    letter-spacing: $h4-spacing-small;
+    letter-spacing: 0em;
     text-transform: none;
 
     &.active-link {

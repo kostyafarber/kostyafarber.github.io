@@ -29,6 +29,10 @@
 	      font-size: $sitetitle-large;
 	    }
 
+		@media only screen and (max-width: 375px) {
+			font-size: 1.2em;
+		}
+
 	    &:hover {
 	      color: $accent-color;
 	    }
@@ -45,7 +49,12 @@
 		p {
 			margin-bottom: 10px;
 			font-size: 1em;
+
+			@media only screen and (max-width: 375px) {
+				font-size: 0.6em;
+			  }
 		}
+
 	}
 
 	@include mq(tabletp) {

@@ -71,6 +71,12 @@
 
       .post__title {
         margin-bottom: 12px;
+        line-height: 0.8em;
+        overflow-wrap: anywhere;
+
+        @media only screen and (max-width: 375px) {
+          font-size: 3.03em;
+        }
       }
 
       .post__description {
@@ -126,6 +132,7 @@
         }
 
         .post__title {
+          font-size: 3.03em;
           margin-bottom: 24px;
         }
 

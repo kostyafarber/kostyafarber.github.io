@@ -14,6 +14,11 @@
   src: url("../fonts/founders-grotesk-web-light.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Philosopher', sans-serif";
+  src: url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
+} 
+
 h1,
 .h1,
 h2,
@@ -202,9 +207,9 @@ a {
 }
 
 .label {
-  font-family: $title-font;
+  font-family: Test Founders Grotesk light, sans-serif;
   font-size: $label-size;
-  font-weight: $label-weight;
+  font-weight: bold;
   line-height: $label-lineheight;
   letter-spacing: $label-spacing;
   color: $text-light-color;
@@ -227,6 +232,10 @@ label {
   font-weight: $footnote-weight;
   line-height: $footnote-lineheight;
   letter-spacing: $footnote-spacing;
+
+  @media only screen and (max-width: 375px) {
+    font-size: 0.65em;
+    }
 }
 
 a.footnote {
@@ -258,4 +267,21 @@ code {
 
 .drop_cap {
   font-size: 3em;
+}
+
+.title_font {
+
+  font-size: 6vw;
+  line-height: 0.85em;
+  letter-spacing: -.06em;
+
+  @media only screen and (max-width: 375px) {
+    font-size: 2.335em;
+  }
+
+}
+
+.project_title {
+  font-size: 6.5vw;
+  margin-bottom: 20px;
 }

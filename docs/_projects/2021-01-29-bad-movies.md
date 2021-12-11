@@ -2,24 +2,20 @@
 title: What Questionable Movies Share
 subtitle: What do bad movies share? An inquiry into the spirit of bad things.
 description: An analysis of a list me and my friends have compiled over the years whilst watching films that we considered so bad they were good. Suffice to say, not all of them where as funny as we thought. I decided to dig deeper and extract relationships and insights from these films.
-featured_image: 'trash_movies/macbookpro-bad.svg'
+featured_image: 'trash_movies/bad-movies.png'
 gallery_images:
-- trash_movies/macbookpro-bad.svg
-home_image: trash_movies/iMac-bad-movies.svg
+- trash_movies/bad-movies.png
+home_image: trash_movies/bad-movies.png
 project_icons:
     - url: 'https://github.com/kostyafarber/bad-movies'
       icon_name: 'github'
 ---
-## Links
-
-<div data-aos="fade-left">
-{% include component-project-links.html %}
-</div>
 
 ## Motivation
 <br>
 One of my fond memories of a bygone era was visiting the local video store, the now ancient ***Video Ezy***, to pick up a movie with my friends. We would go
 to each others houses and have a movie marathon and watch all types of films. Some good, some bad. 
+
 
 ![](../images/projects/trash_movies/videoezy.jpg)
 

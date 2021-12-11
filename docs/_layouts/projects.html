@@ -13,10 +13,9 @@ layout: default
 			<h2 class="post__subtitle subtitle--light">{{ page.subtitle }}</h2>
 		</div>
 
-		<div data-aos='fade-left'>
-			<img src="{{ '/images/projects/' | relative_url}}{{ page.featured_image }}" class="post__featured-image">
-		</div>
 		
+		<img src="{{ '/images/projects/' | relative_url}}{{ page.featured_image }}" class="post__featured-image">
+		{% include component-project-links.html %}
 
 	</header>
 

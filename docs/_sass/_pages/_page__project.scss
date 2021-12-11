@@ -40,3 +40,50 @@
     }
   }
 }
+
+.project_heading{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.project_item {
+    @extend .project_heading;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    margin-top: 3vh;
+}
+
+.project_item_number {
+  font-family: Test Founders Grotesk light, sans-serif;
+  letter-spacing: 0em;
+  font-size: 1.117em;
+  font-weight: 100;
+
+  @media only screen and (max-width: 375px) {
+    font-size: 0.6em;
+  }
+} 
+
+.project_description {
+   flex-flow: column; 
+   display: flex; 
+   align-items: baseline; 
+   flex-direction: column; 
+   flex-wrap: nowrap; 
+   align-content: space-between; 
+   justify-content: space-around; 
+  margin-bottom: 10px;
+}
+
+.project_font {
+  font-size: 2.46em;
+  @media only screen and (max-width: 375px) {
+    font-size: 1.2em;
+  }
+}
+

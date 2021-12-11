@@ -23,12 +23,23 @@ body {
 
 hr {
 	border: 0;
-	height: 2px;
+	height: 1px;
 	background-color: $border-color;
+	margin-right: 5%;
+	margin-left: 5%;
+
 }
 
 
+.title_image {
+	position: relative;
+	z-index: -1;
+}
 
+.section-scroll {
+	height: 100vh;
+	scroll-snap-align: center;
+}
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Page loading
 
 .page-loader {
