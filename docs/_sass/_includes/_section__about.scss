@@ -162,14 +162,20 @@
   font-family: manin;
 }
 
-.me__image {
-  max-width: 50vw;
-  margin: auto;
+.project_heading {
+  margin-left: 5%;
 }
 
-.newton__image {
-  max-width: 75vw;
+.me__image {
+  width: 25vw;
   margin: auto;
+  margin-top: 5vh;
+  border-radius: 25px;
+
+  @media only screen and (max-width: 425px) {
+    width: 100vw;
+
+  } 
 }
 
 .section_about {

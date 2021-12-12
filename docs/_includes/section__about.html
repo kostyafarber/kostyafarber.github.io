@@ -8,12 +8,13 @@
 		<!-- <img src="../images/newton2.gif"> -->
 	</div>
 	<div class="title__socials">
+		<img class='me__image'src="../images/me_glitch.gif">
 		{% include component-socials.html %}
 	</div>
 </section>
 
 <section class='section_projects'>
-  
+  <p class='project_heading'>// RECENT WORK.</p>
 	{% for project in site.projects reversed %}
   
 	<div class='project_item'>            
@@ -21,6 +22,7 @@
 
 	  <div>
 		<h3 class='project_font'><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+		<p>{{project.subtitle}}</p>
 	  </div>
 	</div>
 	<hr>
