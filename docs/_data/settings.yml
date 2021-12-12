@@ -88,18 +88,18 @@ font_settings:
     size: 9.986
     size_small: 4.13
     weight: 700
-    letter_spacing: -0.08
-    letter_spacing_small: -0.08
-    line_height: 0.65
-    line_height_small: 0.65
+    letter_spacing: -0.04
+    letter_spacing_small: -0.04
+    line_height: 0.85
+    line_height_small: 0.85
   h2:
     size: 4.5
     size_small: 2.835
     weight: 700
-    letter_spacing: -0.08
-    letter_spacing_small: -0.08
+    letter_spacing: -0.04
+    letter_spacing_small: -0.04
     line_height: 0.65
-    line_height_small: 0.65 
+    line_height_small: 0.75 
   h3:
     size: 3.16
     size_small: 2.5
@@ -112,8 +112,8 @@ font_settings:
     size: 2.117
     size_small: 1
     weight: 700
-    letter_spacing: -0.08
-    letter_spacing_small: -0.08
+    letter_spacing: -0.04
+    letter_spacing_small: -0.04
     line_height: 0.8
   h5:
     small_size: 1.8
@@ -127,7 +127,7 @@ font_settings:
     medium_size: 1.5
     large_size: 
     weight: 700
-    letter_spacing: -0.02
+    letter_spacing: -0.04
     line_height: 0.8
   subtitle:
     size: 2
@@ -135,7 +135,7 @@ font_settings:
     weight_regular: 400
     weight_heavy: 500
     letter_spacing: -0.06
-    letter_spacing_small: -0.06 
+    letter_spacing_small: -0.06
     line_height: 1
     line_height_small: 1.5
   p:
