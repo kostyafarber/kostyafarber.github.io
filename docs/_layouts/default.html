@@ -44,8 +44,6 @@
 	<!-- Styles -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
-	<link rel="stylesheet" href="../css/mocassin.css">
-
 
 	<!-- Icons -->
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js"
@@ -61,6 +59,18 @@
 		{{ site.data.settings.advanced_settings.custom_styles }}
 	</style>
 	{% endif %}
+
+	<style>
+		@font-face {
+		font-family: "Test Founders Grotesk bold", sans-serif;
+		src: url("/fonts/founders-grotesk-web-bold.woff2") format('woff2');
+	  	}
+	  	@font-face {
+		font-family: "Test Founders Grotesk light", sans-serif;
+		src: url("/fonts/founders-grotesk-web-light.woff2") format('woff2');
+	 	}
+	</style>
+
 
 	{% if site.data.settings.advanced_settings.analytics_code %}
 	<!-- Analytics Code -->
