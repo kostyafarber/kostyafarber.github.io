@@ -244,8 +244,8 @@ label {
   line-height: $footnote-lineheight;
   letter-spacing: $footnote-spacing;
 
-  @media only screen and (max-width: 375px) {
-    font-size: 0.65em;
+  @media only screen and (max-width: 425px) {
+    font-size: 0.75em;
     }
 }
 
