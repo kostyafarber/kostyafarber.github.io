@@ -5,13 +5,29 @@
 // - - - - - - - - - - - - - - - - - -
 
 @font-face {
-  font-family: "Test Founders Grotesk bold", sans-serif;
-  src: url("/fonts/founders-grotesk-web-bold.woff2") format('woff2');
+  font-family: 'Founders Grotesk light';
+  src: url('/fonts/FoundersGrotesk-Light.eot');
+  src: url('/fonts/FoundersGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/FoundersGrotesk-Light.woff2') format('woff2'),
+      url('/fonts/FoundersGrotesk-Light.woff') format('woff'),
+      url('/fonts/FoundersGrotesk-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: "Test Founders Grotesk light", sans-serif;
-  src: url("/fonts/founders-grotesk-web-light.woff2") format('woff2');
+  font-family: 'Founders Grotesk bold';
+  src: url('/fonts/FoundersGrotesk-Bold.eot');
+  src: url('/fonts/FoundersGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/FoundersGrotesk-Bold.woff2') format('woff2'),
+      url('/fonts/FoundersGrotesk-Bold.woff') format('woff'),
+      url('/fonts/FoundersGrotesk-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
+
 
 h1,
 .h1,
@@ -26,7 +42,7 @@ h5,
 h6,
 .h6,
 .subtitle {
-  font-family: 'Test Founders Grotesk bold', sans-serif;
+  font-family: 'Founders Grotesk bold';
   ;
   color: $text-dark-color;
 }
