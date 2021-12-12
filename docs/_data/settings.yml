@@ -68,8 +68,8 @@ color_settings:
   error_color: '#D64541'
 
 font_settings:
-  title_font: 'Test Founders Grotesk bold, sans-serif'
-  body_font: 'Test Founders Grotesk light, sans-serif'
+  title_font: 'Founders Grotesk bold'
+  body_font: 'Founders Grotesk light'
   regular_weight: 400
   bold_weight: 700
   site_title:
