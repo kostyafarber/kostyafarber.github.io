@@ -24,6 +24,12 @@
     margin: auto;
   }
 
+  .project__featured-image {
+    @extend .post__featured-image;
+    width: 95%;
+    border-radius: 20px;
+  }
+
   .project__image {
     width: 50%;
     margin:auto;

@@ -3,10 +3,10 @@ title: Sydney Property Prices Dashboard
 layout: projects
 subtitle: A Dashboard Built From Scratch
 description: A data science project that explores the Sydney property market across different suburbs using a dataset from Kaggle.
-featured_image: 'sydneyhouseprices/dashboard.png'
-home_image: 'sydneyhouseprices/dashboard.png'
+featured_image: 'sydneyhouseprices/dashboard-white.png'
+home_image: 'sydneyhouseprices/dashboard-white.png'
 gallery_images: 
-    -  'sydneyhouseprices/dashboard.png'
+    -  'sydneyhouseprices/dashboard-white.png'
 project_icons:
     - url: 'https://sydneyhouseprices-dashboard.herokuapp.com/'
       icon_name: 'heroku'
@@ -14,13 +14,11 @@ project_icons:
       icon_name: 'github'
 ---
 
-{% include post-components/gallery.html
-	columns = 4
-  full_width = true
-	images = "/images/techstack/matplotlib.svg, /images/techstack/pandas.svg, /images/techstack/heroku.svg, /images/techstack/github.svg, /images/techstack/dash.svg, /images/techstack/numpy.svg"
-%}
+<div class=technologies>
+Pandas.Matplotlib.Seaborn.Heroku.GitHub.NumPy.Python
+</div>
 
-### The Motivation
+## The Motivation
 
 As the old adage goes, for pragmatists anyway, you learn by doing. This especially applies to learning programming. 
 So I set off into the virtual world to find real world data that wasn't curated to make the coders life easier. 
@@ -33,7 +31,7 @@ was to find data that was close to me in terms of proximity.
 A simple search of *'Sydney'* into the search bar yielded 
 a few results, but being the typical Sydney resident, data of property prices seemed like an obvious option.
 
-### The Result
+## The Result
 - A fully custom built interactive dashboard programmed from scratch using **Dash Plotly**, a Python framework for building web analytic applications. 
 - The front end application is deployed on **Heroku**, a cloud platform that makes it easy to deploy and manage Flask applications. 
 - The data was obtained from Kaggle, a dataset with over 100,000 entries scraped from realestate.com.

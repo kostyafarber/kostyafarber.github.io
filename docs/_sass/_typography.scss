@@ -6,11 +6,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk light';
-  src: url('/fonts/FoundersGrotesk-Light.eot');
-  src: url('/fonts/FoundersGrotesk-Light.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FoundersGrotesk-Light.woff2') format('woff2'),
-      url('/fonts/FoundersGrotesk-Light.woff') format('woff'),
-      url('/fonts/FoundersGrotesk-Light.ttf') format('truetype');
+  src: url('/fonts/FoundersGrotesk-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -18,11 +14,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk bold';
-  src: url('/fonts/FoundersGrotesk-Bold.eot');
-  src: url('/fonts/FoundersGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FoundersGrotesk-Bold.woff2') format('woff2'),
-      url('/fonts/FoundersGrotesk-Bold.woff') format('woff'),
-      url('/fonts/FoundersGrotesk-Bold.ttf') format('truetype');
+  src: url('/fonts/FoundersGrotesk-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -259,12 +251,12 @@ time {
 }
 
 code {
-  font-family: $body-font;
+  font-family: monospace;
   padding: .2em .4em;
   margin: 0;
-  font-size: 100%;
-  background-color: rgba(27,31,35,.05);
-  border-radius: 3px;
+  font-size: 95%;
+  background-color: rgba(110,118,129,.04);
+  border-radius: 6px;
 }
 
 ::selection {
@@ -288,6 +280,7 @@ code {
 
   @media only screen and (max-width: 425px) {
     font-size: 2.8em;
+
   }
 
 }
