@@ -85,7 +85,7 @@ font_settings:
     weight: 600
     letter_spacing: -0.08
   h1:
-    size: 9.986
+    size: 7.986
     size_small: 4.13
     weight: 700
     letter_spacing: -0.04

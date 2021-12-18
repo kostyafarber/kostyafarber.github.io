@@ -9,6 +9,10 @@ gallery_images:
     -  'website/iPhone-wide.png'
 ---
 
+<div class='technologies'>
+JavaScript.Jekyll.GitHubPages.CSS.HTML.Markdown.SCSS.Canva.
+</div>
+
 ## My Personal Portfolio
 
-This is some dummy text.
+I decided to build a website to document my work as well as having a place were I can share my writing about topics I find interesting.
