@@ -7,6 +7,9 @@ featured_image: 'website/iPhone-wide.png'
 home_image: 'website/iPhone-wide.png'
 gallery_images: 
     -  'website/iPhone-wide.png'
+project_icons:
+    - url: 'https://github.com/kostyafarber/kostyafarber.github.io'
+      icon_name: 'github'
 ---
 
 <div class='technologies'>

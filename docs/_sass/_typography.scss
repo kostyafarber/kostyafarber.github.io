@@ -255,8 +255,17 @@ code {
   padding: .2em .4em;
   margin: 0;
   font-size: 95%;
-  background-color: rgba(241,241,241,.4);
   border-radius: 6px;
+
+}
+
+.language-plaintext {
+  font-family: monospace;
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 95%;
+  border-radius: 6px;
+  background-color: rgba(241,241,241,.4);
 
 }
 
