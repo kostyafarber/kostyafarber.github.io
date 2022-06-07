@@ -54,10 +54,10 @@ my best to explain my search pattern step by step.
 \-.*|^\d*.
 ``` 
 
-The first character, known as a **metacharacter**, are characters that serve special functions. The dash needs to be escaped by the backslash **`(\)`** to match the dash **`(-)`** character, otherwise regex will interpret the dash as signifying a range of characters.
-The period **`(.)`** metacharacter is a **wildcard** character. A wildcard is a placeholder represented by a single character which can be interpreted as a number of literal characters. This will match any character but the newline character **`(\n)`**. The next character is also a wildcard **`(*)`** and will match the character to its left zero or more times. This first search pattern will therefore match everything including and after the dashes and solves the first part of the pattern.
+The first character, known as a **metacharacter**, are characters that serve special functions. The dash needs to be escaped by the backslash **`\`** to match the dash **`-`** character, otherwise regex will interpret the dash as signifying a range of characters.
+The period **`.`** metacharacter is a **wildcard** character. A wildcard is a placeholder represented by a single character which can be interpreted as a number of literal characters. This will match any character but the newline character `\n`. The next character is also a wildcard **`*`** and will match the character to its left zero or more times. This first search pattern will therefore match everything including and after the dashes and solves the first part of the pattern.
 
-The **`(|)`** character is a logical operator that signifies **either or**. This will match the expression to its left **or** the expression to its right. The **`(^)`** tells regex to start the search at the start of the string or line, whilst the metacharacter **`(/d)`** will match any digits, followed by the wildcard  **`(*)`** for zero or more occurrences. Finally, the  **`(.)`** will match any single character after all the digits, in our case the period. 
+The **`|`** character is a logical operator that signifies **either or**. This will match the expression to its left **or** the expression to its right. The **`^`** tells regex to start the search at the start of the string or line, whilst the metacharacter `/d` will match any digits, followed by the wildcard  **`*`** for zero or more occurrences. Finally, the  **`.`** will match any single character after all the digits, in our case the period. 
 
 That's it! We have the regular expression to format our text file. Fortunately, Python has a useful module [re](https://docs.python.org/3/library/re.html#module-re) to wrangle our text file with regex. 
 
@@ -71,17 +71,19 @@ import re
 with open("trash-movie-list.txt", ) as file:
     # read txt file, convert to list
     lines = [x.strip() for x in file.readlines()]
+
 ```
 
 We save the regex search pattern as a string and create another variable to replace matched patterns with an empty string. We use the sub method from the re module to replace all matched sequences with an empty string. We wrap this in another list comprehension and strip the lines again.
 
 ```python
 # replace all numberings and everything in front the dashes
-    pattern = '\-.*|^\d*.'
-    replace = ""
+pattern = '\-.*|^\d*.'
+replace = ""
 
-    # store cleaned titles as specified by regex in a new list
-    trash_list = [re.sub(pattern, replace, x).strip() for x in lines]
+# store cleaned titles as specified by regex in a new list
+trash_list = [re.sub(pattern, replace, x).strip() for x in lines]
+
 ```
 
 That's it! We can save the results to a Pandas DataFrame and check it out to see the processed movie titles.
@@ -93,6 +95,7 @@ bad_movies_df = pd.DataFrame(trash_list, columns=['Titles'])
 test_df = bad_movies_df.head(10)
 
 print(test_df)
+
 ```
 
 ![](../images/posts/trashdf.png)
