@@ -1,7 +1,7 @@
 ---
-title: Sydney Property Prices Dashboard
+title: Sydney Property Prices Dashboard.
 layout: projects
-subtitle: A Dashboard Built From Scratch
+subtitle: A dashboard built from scratch
 description: A data science project that explores the Sydney property market across different suburbs using a dataset from Kaggle.
 featured_image: 'sydneyhouseprices/dashboard-white.png'
 home_image: 'sydneyhouseprices/dashboard-white.png'

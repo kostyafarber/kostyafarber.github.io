@@ -3,7 +3,7 @@
 	<li class="socials__item">
 		<a href="{{ url_icon.url }}" target="_blank" class="socials__item"
 			title="{{ url_icon.url | remove: '_url' | replace: '-', ' ' | capitalize }}">
-            <span class="iconify" data-icon="simple-icons:{{ url_icon.icon_name }}" data-inline="false" data-height='10vw'></span>
+            <span class="iconify icon" data-icon="simple-icons:{{ url_icon.icon_name }}" data-inline="false"></span>
 		</a>
 	</li>
 	{% endfor %}

@@ -1,7 +1,7 @@
 ---
-title: My Website
+title: My Website.
 layout: projects
-subtitle: A Personal Portfolio and Other Things.
+subtitle: A personal portfolio and other things
 description: A website built with Jekyll and GitHub pages that showcases my projects as well as my blog and other writings.
 featured_image: 'website/iPhone-wide.png'
 home_image: 'website/iPhone-wide.png'
