@@ -3,21 +3,24 @@
 		<h1 class="title_font">Data Analyst <span style="color: #4C60E6;">.</span></h1>
 	</div> -->
 	<div class="title">
-		<h1 class='title_font'>Data Analyst, based in London, with a focus on operating at the intersection of science and <span class='arts' style="color: #4C60E6;"></span></h1>
-		<p>Finding <span style="color: #4C60E6;">elegant</span> solutions to complex problems.</p>
-		<!-- <img src="../images/newton2.gif"> -->
+		<h1 data-aos='fade-right' class='title_font'>Data Analyst, based in London, with a focus on operating at the intersection of science and <span class='arts' style="color: #4C60E6;"></span></h1>
+		<div class='main_subtitle'>
+			<p data-aos="fade-down">Finding <span style="color: #4C60E6;">elegant</span> solutions to complex problems.</p>
+		</div>
 	</div>
 	<div class="title__socials">
-		<img class='me__image' src="../images/me_glitch.gif">
-		{% include component-socials.html %}
+		<img class='me__image' src="../images/me_glitch.gif" data-aos='fade-left'>
+		<div data-aos="fade-up">
+			{% include component-socials.html %}
+		</div>
 	</div>
 </section>
 
 <section class='section_projects'>
-  <p class='project_heading'>// RECENT WORK.</p>
+  <p class='project_heading' data-aos="fade-right">// RECENT WORK.</p>
 	{% for project in site.projects reversed %}
   
-	<div class='project_item'>            
+	<div class='project_item' data-aos="fade-in">            
 	  <h4 class='project_item_number'>{{ forloop.index | prepend: '00' | slice: -2, 2 }}</h4>
 
 	  <div>
@@ -32,14 +35,27 @@
   
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="../js/lax.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script>
+    
+    AOS.init({
+		easing: 'ease-out-back',
+   		duration: 800,
+   		delay: 300,
+		anchorPlacement: 'top-center'
+	});
+
+</script>
 
 <script>
     window.onload = function () {
-      lax.init()
+	lax.init()
 
     // Add a driver that we use to control our animations
-      lax.addDriver('scrollY', function () {
-      return window.scrollY
+	lax.addDriver('scrollY', function () {
+	return window.scrollY
     })
   }
 </script>
@@ -52,3 +68,5 @@ var typed = new Typed('.arts', {
   typeSpeed: 25
 });
 </script> 
+
+

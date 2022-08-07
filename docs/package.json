@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "aos": "^2.3.4",
     "highlight.js": "^11.1.0"
   }
 }

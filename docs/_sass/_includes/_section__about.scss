@@ -187,3 +187,14 @@
   margin: auto;
   width: 50vw;
 }
+
+.main_subtitle {
+  font-family: VT323;
+  font-size: 1.6em;
+
+  @media only screen and (max-width: 425px) {
+    font-size: .85em;
+
+  } 
+
+}
