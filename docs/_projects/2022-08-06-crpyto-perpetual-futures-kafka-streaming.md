@@ -1,12 +1,12 @@
 ---
-title: Bitcoin Perpetual Futures Real-Time Streaming Order Flow Imbalance.
+title: Bitcoin Real-Time Streaming Data Pipeline.
 layout: projects
 subtitle: A DevOps project utilising Docker, Kafka and Microservice Architecture Principles.
 description: A data science project that explores the Sydney property market across different suburbs using a dataset from Kaggle.
-featured_image: 'kafka-docker-project/kafka.png'
-home_image: 'kafka-docker-project/kafka.png'
+featured_image: 'kafka-docker-project/notebook_feature.png'
+home_image: 'kafka-docker-project/notebook_feature.png'
 gallery_images: 
-    -  'kafka-docker-project/kafka.png'
+    -  'kafka-docker-project/notebook_feature.png'
 project_icons:
     - url: 'https://github.com/kostyafarber/crypto-lob-data-pipeline'
       icon_name: 'github'
