@@ -3,10 +3,10 @@ title: Car Sales Scraper.
 layout: projects
 subtitle: A web scraper that helped sell my car using a data-driven approach
 description: An AWS solution that scrapes car prices from carsales.com.au and using BeautifulSoup, AWS Lambda, AWS DynamoDB and AWS SNS. I used this data to price my car and sell it before moving to London.
-featured_image: 'car_sales_scraper/car-sales-scraper.png'
-home_image: 'car_sales_scraper/car-sales-scraper.png'
+featured_image: 'car_sales_scraper/news-ad.png'
+home_image: 'car_sales_scraper/news-ad.png'
 gallery_images: 
-    -  'car_sales_scraper/car-sales-scraper.png'
+    -  'car_sales_scraper/news-ad.png'
 project_icons:
     - url: 'https://github.com/kostyafarber/car-sales'
       icon_name: 'github'
@@ -31,7 +31,7 @@ I've found myself an interesting problem that I needed to solve to help me get a
 ## How Did I Do It?
 ![](../images/projects/car_sales_scraper/car-sales-mockup.png)
 
-A popular site, [carsales.com.au](www.carsales.com.au) allows users to sell their second-hand cars. This acts as a marketplace for buyers and sellers. I searched for cars that fit the description of my Mazda. From here I could grab all the prices of the cars on the market (on carsales.com.au) and base my price of this. I used [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/) to scrape the html of the page and find the sales prices. 
+A popular site, [carsales.com.au](https://www.carsales.com.au/) allows users to sell their second-hand cars. This acts as a marketplace for buyers and sellers. I searched for cars that fit the description of my Mazda. From here I could grab all the prices of the cars on the market (on carsales.com.au) and base my price of this. I used [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/) to scrape the html of the page and find the sales prices. 
 
 ### Code
 Using Google Chrome's inspect, I isolated the correct class, aptly named `title` in the `h1` tags. I used a class to implement my scraper called `CarSalesScraper`. It performs all the scraping tasks and data cleansing needed for ingestion into my database. You can find the source code in the GitHub link above.
