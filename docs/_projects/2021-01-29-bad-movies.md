@@ -2,10 +2,10 @@
 title: What Questionable Movies Share.
 subtitle: What do bad movies share? An inquiry into the spirit of bad things
 description: An analysis of a list me and my friends have compiled over the years whilst watching films that we considered so bad they were good. Suffice to say, not all of them where as funny as we thought. I decided to dig deeper and extract relationships and insights from these films.
-featured_image: 'trash_movies/gba_toxic.png'
+featured_image: 'trash_movies/gba_animation.gif'
 gallery_images:
-- trash_movies/gba_toxic.png
-home_image: trash_movies/gba_toxic.png
+- trash_movies/gba_animation.gif
+home_image: trash_movies/gba_animation.gif
 project_icons:
     - url: 'https://github.com/kostyafarber/bad-movies'
       icon_name: 'github'
