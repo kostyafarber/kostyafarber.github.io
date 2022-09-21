@@ -299,3 +299,12 @@ code {
   font-size: 6.5vw;
   margin-bottom: 20px;
 }
+
+figcaption {
+  font-size: 1em;
+
+  @media only screen and (max-width: 425px) {
+    font-size: 0.75em;
+  }
+
+}

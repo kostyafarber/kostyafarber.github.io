@@ -277,5 +277,4 @@ DEPENDENCIES
   kramdown-parser-gfm
   webrick
 
-BUNDLED WITH
-   2.3.15
+
