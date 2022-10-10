@@ -1,0 +1,23 @@
+{%- capture columns -%}
+	{%- if include.columns -%}
+		{{ include.columns }}
+	{%- else -%}
+		2
+	{%- endif -%}
+{%- endcapture -%}
+
+{% assign images = include.images | split: "," %}
+{% assign links = include.links | split: "," %}
+
+<header class="post__header header--single">
+
+	<div class="gallery {% if include.full_width == true %}full-width{% endif %}" data-columns="{{ columns }}">
+		{%- for link in links -%}
+		<a href="{{ link }}">
+			<img src="{{ images[forloop.index0] }}">
+		</a>
+		{%- endfor -%}
+	</div>
+
+</header>
+

@@ -1,8 +1,9 @@
 site: The Art and Science of Programming
 
 url: https://kostyafarber.github.io/
-baseurl:
+# baseurl:
 
+host: 0.0.0.0
 
 collections:
   pages:

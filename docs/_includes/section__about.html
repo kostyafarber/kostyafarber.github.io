@@ -1,7 +1,4 @@
 <section>
-	<!-- <div class="title">
-		<h1 class="title_font">Data Analyst <span style="color: #4C60E6;">.</span></h1>
-	</div> -->
 	<div class="title">
 		<h1 data-aos='fade-right' class='title_font'>Software <span style="color: #4C60E6;">Engineer</span>, based in London, with a focus on operating at the intersection of science and <span class='arts' style="color: #4C60E6;"></span></h1>
 		<div class='main_subtitle'>
@@ -9,7 +6,7 @@
 		</div>
 	</div>
 	<div class="title__socials">
-		<img class='me__image' src="../images/me_baggie.gif" data-aos='fade-left'>
+		<!-- <img class='me__image' src="../images/me_baggie.gif" data-aos='fade-left'> -->
 		<div data-aos="fade-up">
 			{% include component-socials.html %}
 		</div>
@@ -31,7 +28,48 @@
 	<hr>
   
 	{% endfor %}
+
   </section>
+
+<p class='gallery_heading' data-aos="fade-right">// FRONT-END GALLERY.</p>
+
+<!-- {% include post-components/gallery_landing.html
+	columns = 2
+
+	images = "../images/gallery/nft-screenshot-lg.png,../images/gallery/stats-preview.png"
+
+	links = "https://rococo-hamster-1bb83d.netlify.app/,https://fastidious-wisp-afb1f4.netlify.app/"
+	
+%} -->
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="0">
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<a href="https://rococo-hamster-1bb83d.netlify.app/">
+			<picture>
+			  <source srcset="../images/gallery/nft-screenshot-sm.png" media="(max-width: 600px)" />
+			  <img src="../images/gallery/nft-screenshot-lg.png" class="d-block w-75 mx-auto hvr-grow-shadow" alt="nft component screenshot"/> 
+			</picture>
+		</a>
+	  </div>
+	  <div class="carousel-item">
+		<a href="https://fastidious-wisp-afb1f4.netlify.app/">
+			<picture>
+				<source srcset="../images/gallery/stats-preview-sm.png" media="(max-width: 600px)" />
+				<img src="../images/gallery/stats-preview-lg.png" class="d-block w-75 mx-auto hvr-grow-shadow" alt="stats preview component screenshot"/> 
+			  </picture>
+		</a>
+	  </div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+  </div>
   
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="../js/lax.min.js"></script>
