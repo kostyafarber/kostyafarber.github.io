@@ -1,37 +1,45 @@
 <section>
-	<div class="title">
-		<h1 data-aos='fade-right' class='title_font'>Software <span style="color: #4C60E6;">Engineer</span>, based in London, with a focus on operating at the intersection of science and <span class='arts' style="color: #4C60E6;"></span></h1>
-		<div class='main_subtitle'>
-			<p data-aos="fade-down">Finding <span style="color: #4C60E6;">elegant</span> solutions to complex problems.</p>
-		</div>
-	</div>
-	<div class="title__socials">
-		<!-- <img class='me__image' src="../images/me_baggie.gif" data-aos='fade-left'> -->
-		<div data-aos="fade-up">
-			{% include component-socials.html %}
-		</div>
-	</div>
+  <div class="title">
+    <h1 data-aos="fade-right" class="title_font">
+      Software <span style="color: #4c60e6">Engineer</span>, based in London,
+      with a focus on operating at the intersection of science and
+      <span class="arts" style="color: #4c60e6"></span>
+    </h1>
+    <div class="main_subtitle">
+      <p data-aos="fade-down">
+        Finding <span style="color: #4c60e6">elegant</span> solutions to complex
+        problems.
+      </p>
+    </div>
+  </div>
+  <div class="title__socials">
+    <!-- <img class='me__image' src="../images/me_baggie.gif" data-aos='fade-left'> -->
+    <div data-aos="fade-up">{% include component-socials.html %}</div>
+  </div>
 </section>
 
-<section class='section_projects'>
-  <p class='project_heading' data-aos="fade-right">// RECENT WORK.</p>
-	{% for project in site.projects reversed %}
-  
-	<div class='project_item' data-aos="fade-in">            
-	  <h4 class='project_item_number'>{{ forloop.index | prepend: '00' | slice: -2, 2 }}</h4>
+<section class="section_projects">
+  <p class="project_heading" data-aos="fade-right">// RECENT WORK.</p>
+  {% for project in site.projects reversed %}
 
-	  <div>
-		<h3 class='project_font'><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-		<p>{{project.subtitle}}</p>
-	  </div>
-	</div>
-	<hr>
-  
-	{% endfor %}
+  <div class="project_item" data-aos="fade-in">
+    <h4 class="project_item_number">
+      {{ forloop.index | prepend: '00' | slice: -2, 2 }}
+    </h4>
 
-  </section>
+    <div>
+      <h3 class="project_font">
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      </h3>
+      <p>{{project.subtitle}}</p>
+    </div>
+  </div>
+  <hr />
 
-<p class='gallery_heading' data-aos="fade-right">// FRONT-END GALLERY.</p>
+  {% endfor %}
+</section>
+
+<p class="gallery_heading" data-aos="fade-right">// FRONT-END GALLERY.</p>
 
 <!-- {% include post-components/gallery_landing.html
 	columns = 2
@@ -42,67 +50,122 @@
 	
 %} -->
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="0">
-	<div class="carousel-inner">
-	  <div class="carousel-item active">
-		<a href="https://rococo-hamster-1bb83d.netlify.app/">
-			<picture>
-			  <source srcset="../images/gallery/nft-screenshot-sm.png" media="(max-width: 600px)" />
-			  <img src="../images/gallery/nft-screenshot-lg.png" class="d-block w-75 mx-auto hvr-grow-shadow" alt="nft component screenshot"/> 
-			</picture>
-		</a>
-	  </div>
-	  <div class="carousel-item">
-		<a href="https://fastidious-wisp-afb1f4.netlify.app/">
-			<picture>
-				<source srcset="../images/gallery/stats-preview-sm.png" media="(max-width: 600px)" />
-				<img src="../images/gallery/stats-preview-lg.png" class="d-block w-75 mx-auto hvr-grow-shadow" alt="stats preview component screenshot"/> 
-			  </picture>
-		</a>
-	  </div>
-	</div>
-	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  <span class="sr-only">Next</span>
-	</a>
+<div
+  id="carouselExampleControls"
+  class="carousel slide"
+  data-ride="carousel"
+  data-interval="0"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://rococo-hamster-1bb83d.netlify.app/">
+        <picture>
+          <source
+            srcset="../images/gallery/nft-screenshot-sm.png"
+            media="(max-width: 600px)"
+          />
+          <img
+            src="../images/gallery/nft-screenshot-lg.png"
+            class="d-block w-75 mx-auto hvr-grow-shadow"
+            alt="nft component screenshot"
+          />
+        </picture>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://fastidious-wisp-afb1f4.netlify.app/">
+        <picture>
+          <source
+            srcset="../images/gallery/stats-preview-sm.png"
+            media="(max-width: 600px)"
+          />
+          <img
+            src="../images/gallery/stats-preview-lg.png"
+            class="d-block w-75 mx-auto hvr-grow-shadow"
+            alt="stats preview component screenshot"
+          />
+        </picture>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://lighthearted-jelly-3b8d46.netlify.app/">
+        <picture>
+          <source
+            srcset="../images/gallery/advice-generator-sm.png"
+            media="(max-width: 600px)"
+          />
+          <img
+            src="../images/gallery/advice-generator-lg.png"
+            class="d-block w-75 mx-auto hvr-grow-shadow"
+            alt="stats preview component screenshot"
+          />
+        </picture>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://elaborate-twilight-8e997d.netlify.app/">
+        <picture>
+          <source
+            srcset="../images/gallery/product-preview-sm.png"
+            media="(max-width: 600px)"
+          />
+          <img
+            src="../images/gallery/product-preview-lg.png"
+            class="d-block w-75 mx-auto hvr-grow-shadow"
+            alt="stats preview component screenshot"
+          />
+        </picture>
+      </a>
+    </div>
   </div>
-  
+  <a
+    class="carousel-control-prev"
+    href="#carouselExampleControls"
+    role="button"
+    data-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a
+    class="carousel-control-next"
+    href="#carouselExampleControls"
+    role="button"
+    data-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="../js/lax.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
 <script>
-    
-    AOS.init({
-		easing: 'ease-out-back',
-		anchorPlacement: 'top-center'
-	});
-
+  AOS.init({
+    easing: "ease-out-back",
+    anchorPlacement: "top-center",
+  });
 </script>
 
 <script>
-    window.onload = function () {
-	lax.init()
+  window.onload = function () {
+    lax.init();
 
     // Add a driver that we use to control our animations
-	lax.addDriver('scrollY', function () {
-	return window.scrollY
-    })
-  }
+    lax.addDriver("scrollY", function () {
+      return window.scrollY;
+    });
+  };
 </script>
 
 <script>
-var typed = new Typed('.arts', {
-  // Waits 1000ms after typing "First"
-  strings: ['painting', 'architecture', 'fashion', 'literature', 'arts.'],
-  showCursor: false,
-  typeSpeed: 25
-});
-</script> 
-
-
+  var typed = new Typed(".arts", {
+    // Waits 1000ms after typing "First"
+    strings: ["painting", "architecture", "fashion", "literature", "arts."],
+    showCursor: false,
+    typeSpeed: 25,
+  });
+</script>
