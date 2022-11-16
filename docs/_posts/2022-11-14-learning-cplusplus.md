@@ -9,7 +9,7 @@ author: Kostya Farber
 ---
 
 # What I want to do here
-This is a place where I can record all stuff `c++` and how I'm progressing and learning.
+This is a place where I can record all stuff `c++` and how I'm progressing and learning. This includes everything from general syntax of the language, general problem solving and everything else.
 
 ## Classes
 ### Constructors
@@ -61,5 +61,79 @@ The above is an example of reading in a comma separated list of integers in a st
 
 *note: the reason we can do `while (ss)` is because [here](https://cplusplus.com/reference/ios/ios/operator_bool/*) the boolean operator is overloaded, making the stream return `false` if there is any error in the stream.*
 
+## Leetcode
+### Guessing Game
+Today I solved an easy question, that involved performing a binary search. This was the first time doing a problem like this in `c++` and naturally I got the dreaded integer overflow. 
 
+#### Integers
+The largest number that can fit into a 32 bit *unsigned (non negative)* integer is $$2^{32}$$. It follows that if we want to represnt a *signed* integer we half this space. The first bit will determine whether a value is positive or negative and then the rest will be the digits. 
 
+So then we have $$-(2^{31})$$ for the negative portion and $$2^{31} - 1$$ for the positive portion.
+
+#### The Problem
+Back to the problem.
+
+```c++
+/** 
+ * Forward declaration of guess API.
+ * @param  num   your guess
+ * @return 	     -1 if num is higher than the picked number
+ *			      1 if num is lower than the picked number
+ *               otherwise return 0
+ * int guess(int num);
+ */
+
+class Solution {
+public:
+    int guessNumber(int n) {
+        unsigned long int start = 1;
+        unsigned long int end = n;
+        unsigned long int res = 1;
+
+        while (guess(res) != 0) {
+            res = (start + end) / 2;
+            
+            if (guess(res) == -1) {
+                end = res - 1;
+            }
+
+            else {
+                start = res + 1;
+            }
+        }
+
+        return res;
+    }
+};
+```
+
+This `res = (start + end) / 2;` was causing an overflow. The `start + end` portion was evaluating to a number that could not fit in a regular 32 bit integer (i.e $$2^{32}$$).
+
+To avoid this you often see:
+
+$$mid = start + \frac{(end - left)}{2}$$
+
+#### Deriving the formula
+Naturally I was curious. Where the hell this formula come from? Scrawling Google as developers do I find out it involved some simple algebra. To demonstrate let's say that the mid point is some arbitrary value $$x$$ away from $$l$$:
+
+$$ mid = l + x\tag{1}$$
+
+Substitute into our mid and perform some algebra:
+
+$$ l + x = \frac{l + r}{2}$$
+
+$$ x = \frac{l + r}{2} - l$$
+
+$$ 2x = (l + r) -2l$$
+
+$$ 2x = (r - l)$$
+
+$$ x = \frac{r - l}{2}$$
+
+Substitute $$x$$ back into $$1$$ and we get:
+
+$$mid = l + \frac{r - l}{2}$$
+
+There it is! We have that formula that you see everywhere when performing a binary search and you need to have `start + end` fit into a 32 bit integer. 
+
+I think it's always nice to know where something is coming from when using it. It helps make sense of *how* and *why* I'm using something. 
