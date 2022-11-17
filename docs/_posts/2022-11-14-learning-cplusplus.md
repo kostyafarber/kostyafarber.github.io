@@ -8,7 +8,7 @@ tags: data-structures algorithms breadth-first-search art copenhagen contemporar
 author: Kostya Farber
 ---
 
-# What I want to do here
+# The Idea Is
 This is a place where I can record all stuff `c++` and how I'm progressing and learning. This includes everything from general syntax of the language, general problem solving and everything else.
 
 ## Classes
