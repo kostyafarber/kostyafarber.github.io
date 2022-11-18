@@ -22,8 +22,7 @@ It was simple to realise that all we needed to do was continually check if this 
 ## Code
 ### C++
 ```cpp
-#include<set>
-#include <cmath>
+#include<vector>
 
 class Solution {
 public:
