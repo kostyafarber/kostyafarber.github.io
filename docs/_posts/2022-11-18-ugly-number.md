@@ -9,7 +9,7 @@ author: Kostya Farber
 ---
 
 ## Problem
-Today I solved another `c++` leetcode problem. This one was an `easy` and asked us to determine whether a number was an *ugly number*. The idea is, a number is ugly if **it's prime factorisation** only consists of `2, 3, 5`.
+Today I solved another `c++` leetcode problem. This one was an <span style="color:green">*easy*</span>. and asked us to determine whether a number was an *ugly number*. The idea is, a number is ugly if **it's prime factorisation** only consists of `2, 3, 5`.
 
 *One way to factorise a number into it's primes is to just pick the smallest possible prime number and divide this number by that prime and do the same and so on until the number is 1.*
 
