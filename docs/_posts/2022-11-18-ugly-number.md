@@ -20,7 +20,7 @@ I originally went ahead and tried to find an algorithm that could produce all pr
 It was simple to realise that all we needed to do was continually check if this number `n` was divisable with `mod = 0` for any of those primes. If we eventually got to `1` it meant that we could factorise `n` with only `2, 3, 5` if this check broke and `n` was not equal to one, that meant other factors exist for `n` and it isn't ugly (which isn't the worst thing for a number. Nobody likes being called ugly).
 
 ## Code
-
+### C++
 ```cpp
 #include<set>
 #include <cmath>
@@ -39,4 +39,19 @@ public:
         return n == 1;
     }
 };
+```
+
+### Python3
+
+```python
+class Solution:
+    def isUgly(self, n: int) -> bool:
+        if n == 0: return False
+        primes = (2, 3, 5)
+
+        for p in primes:
+            while (n % p == 0):
+                n /= p
+
+        return n == 1
 ```
