@@ -13,4 +13,5 @@ gem 'jekyll-target-blank'
 group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-sitemap'
+  gem 'jekyll-spaceship'
 end
