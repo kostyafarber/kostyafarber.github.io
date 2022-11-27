@@ -23,12 +23,14 @@ Visually this looks like this:
 
 ![insertion-sort-animation](/images/posts/insertion-sort.gif)
 
+<figcaption align = "center"><b>Fig.1 - Insertion sort in action</b></figcaption>
+
 ## Time Complexity
 Let's think through this for the worst case. We are always comparing the element before the one we are currently processing. What would suck is if at every stage we would have to move the element all the way to the start of the array. This would be the case if the array was sorted in reverse order, like so for example:
 
 $$ array = [5,4,3,2,1] $$
 
-In this case we would have to travese the array \\(n - 1\\) + \\(n - 2\\) + \\(n - 3\\) + ... + 1 times, which is \\(O(n^2)\\). 
+In this case we would have to travese the array \\(n - 1\\) + \\(n - 2\\) + \\(n - 3\\) + ... + 1, which is \\(O(n^2)\\). 
 
 Carrying on with this logic we see that when the array is *sorted* we get the best case time complexity \\(O(n)\\), in which case all we do is compare every adjacent element once and we are done. Obviously this isn't the best sorting algorithm out there but it is still good to know about.
 

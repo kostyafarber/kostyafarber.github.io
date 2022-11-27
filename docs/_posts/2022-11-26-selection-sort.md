@@ -9,19 +9,19 @@ author: Kostya Farber
 ---
 
 ## What is selection sort?
-Selection sort is a sorting algorithm. It was one of the more inefficient sorting algorithms available. It takes in the worst case $O(n^2)$ in time complexity. 
+Selection sort is a sorting algorithm. It was one of the more inefficient sorting algorithms available. It takes in the worst case \\(O(n^2)\\) in time complexity. 
 
 ## How does selection sort... sort?
 The idea behind selection sort is very simple. We iterate through our array and find the index of the smallest element. Once we pass through the array we swap the first value with current minimum value. 
 
-I like to think of it as a claw machine grabbing the minumum element at every iteration and placing it in $n - i^{ith}$ position.
+I like to think of it as a claw machine grabbing the minumum element at every iteration and placing it in \\(n - i^{ith}\\) position.
 
 ![selection-sort-animation](image/../../images/posts/selections-sort.webp)
 <figcaption align = "center"><b>Fig.1 - Selection sort in action</b></figcaption>
 <br>
 Now the first position is sorted. We do this for the rest of the $n - i$ elements (because the first element is now sorted). That's it.
 
-It's easy to see why this is $O(n^2)$. For every element $i$ we have to iterate through the array $n - i$ times. Let's say we have an array of $n=5$. Then we have to iterate:
+It's easy to see why this is \\(O(n^2)\\). For every element \\(i\\) we have to iterate through the array $n - i$ times. Let's say we have an array of \\(n=5\\). Then we have to iterate:
 
 $$(n - 1) + (n - 2) + ... + 1$$
 
@@ -29,8 +29,9 @@ Which by arithmetic progression we know to be:
 
 $$ \sum_{i=1}^{n - 1}i = \frac{(n - 1) + 1}{2}(n-1) = \frac{1}{2}n(n-1) = \frac{1}{2}(n^2 - n)$$
 
-In Big O analysis we can drop the constants and keep the dominant power, which in this case is $n^2$, thus having a $O(n^2)$.
+In Big O analysis we can drop the constants and keep the dominant power, which in this case is \\(n^2\\), thus having a \\(O(n^2)\\).
 
+## Implementation
 Below is an implementation in `c++`.
 
 ```c++
@@ -38,7 +39,6 @@ Below is an implementation in `c++`.
 #include <vector>
 
 using namespace std;
-using namespace chrono;
 
 void swap(int &a, int &b) {
     int temp = a;
