@@ -11,7 +11,7 @@ author: Kostya Farber
 ## What is selection sort?
 Selection sort is a sorting algorithm. It was one of the more inefficient sorting algorithms available. It takes in the worst case $O(n^2)$ in time complexity. 
 
-## How does selection sort.. sort?
+## How does selection sort... sort?
 The idea behind selection sort is very simple. We iterate through our array and find the index of the smallest element. Once we pass through the array we swap the first value with current minimum value. 
 
 I like to think of it as a claw machine grabbing the minumum element at every iteration and placing it in $n - i^{ith}$ position.
