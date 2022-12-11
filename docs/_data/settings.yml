@@ -140,7 +140,7 @@ font_settings:
     line_height_small: 1.5
   p:
     size: 1.25
-    size_small: 0.85
+    size_small: 1
     weight: 300
     letter_spacing: 0.02
     letter_spacing_small: 0
