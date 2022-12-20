@@ -52,4 +52,61 @@ Contrast that with 12:
 
 We get `0`, which means the number is even. 
 
-Next time you want to check even and odd numbers, this may be a quicker way then using `n % 2 == 0`.
+Next time you want to check even and odd numbers, this may be a quicker way then using `n % 2 == 0`. Or better yet just run the code below and see for yourself 😏
+
+
+```python
+import numpy as np
+import random
+import time
+
+def even_bit(n):
+    if (n & 1) == 1:
+        return "Odd"
+
+    else:
+        return "Even"
+
+def even_mod(n):
+    if (n % 2) == 0:
+        return "Even"
+
+    else:
+        return "Odd"
+
+def test_even_bit():
+    for _ in range(100):
+        time_start = time.time()
+        arr = np.random.randint(-(2**31) / 2, ((2**31) - 1) / 2, size=random.randint(0, 10**3), dtype=np.int32)
+
+        for num in arr:
+            even_bit(num)
+
+    print(f'100 iterations testing even with bits {time.time() - time_start}')
+
+def test_even_mod():
+    time_start = time.time()
+    for _ in range(100):
+        arr = np.random.randint(-(2**31) / 2, ((2**31) - 1) / 2, size=random.randint(0, 10**3), dtype=np.int32)
+
+        for num in arr:
+            even_mod(num)
+        
+    print(f'100 iterations testing even with mod {time.time() - time_start}')
+
+def main():
+    test_even_bit()
+    test_even_mod()
+
+if __name__ == "__main__":
+    main()
+```
+
+## Results
+On one of the runs on my Macbook Pro M1:
+
+100 iterations testing even with bits: **0.0006432533264160156s**
+
+100 iterations testing even with mod: **0.0687568187713623s**
+
+Pretty nifty I think.
