@@ -3,7 +3,7 @@ layout:	post
 title:	"TIL: Passing arrays to functions in c"
 description: What is the size... 
 date:	2022-12-18
-featured_image: '/images/posts/c-logo.png'
+featured_image: '/images/posts/til.webp'
 tags: data-structures algorithms breadth-first-search art copenhagen contemporary
 author: Kostya Farber
 ---
