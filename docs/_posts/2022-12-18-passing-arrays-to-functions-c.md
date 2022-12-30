@@ -10,10 +10,13 @@ author: Kostya Farber
 
 ## Arrays
 To define an array in `c` we can do things like:
-* `char name[] = "Kostya";`
-* `int nums[5] = {1, 2, 3, 4, 5};`
-
-and so forth. We also know that arrays are really just _pointers_ to the first element in the array. For example, `'K'` and `1` in the previous examples.
+```c
+char name[] = "Kostya";
+```
+```c
+int nums[5] = {1, 2, 3, 4, 5};
+```
+and so forth. We also know that arrays are really just _pointers_ to the first element in the array (kind of). For example, `'K'` and `1` in the previous examples.
 
 ## Arrays as parameters to functions
 We can pass in an array to a function, such as this one that prints the letters of a name:
@@ -29,9 +32,19 @@ void print_letters_of_name(char name[]) {
 
 This works because all `c` style strings have the null terminating character `\0` at the end of the array of characters. In practice the array `name` actually looks like `{'K', 'o', 's', 't', 'y', 'a', '\0'}`.
 
-This is why `while (*name)` works. Because once we reach the end and dereference `\0` (which is the number 0 in ASCII) the while loopbreaks because `false` is `0` by definition.
+This is why 
+```c
+while (*name)
+``` 
 
-We could also write `while (*name != '\0')`, which is the same but more explicit.
+works. Because once we reach the end and dereference `\0` (which is the integer 0 in ASCII) the while loopbreaks because `false` is `0` by definition.
+
+We could also write 
+```c
+while (*name != '\0')
+```
+
+which is the same but more explicit.
 
 But what about `nums`?
 
@@ -58,6 +71,7 @@ void iterate_over_nums_array(int* nums) {
 }
 ```
 * You can pass in the size of the array to the function beforehand.
+  
 ```c
 void iterate_over_nums_array(size_t size, int* nums) {
     int i = 0;
