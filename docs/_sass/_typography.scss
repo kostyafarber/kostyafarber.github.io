@@ -20,6 +20,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Berkeley Mono Regular';
+  src: url('/fonts/BerkeleyMono-Regular.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 h1,
 .h1,
@@ -251,7 +259,7 @@ time {
 }
 
 code {
-  font-family: monospace;
+  font-family: Berkeley Mono;
   padding: .2em .4em;
   margin: 0;
   font-size: 95%;
@@ -285,6 +293,7 @@ code {
 
 .title_font {
 
+  font-family: 'Founders Grotesk bold';
   font-size: 6vw;
   line-height: 0.85em;
   letter-spacing: -.06em;

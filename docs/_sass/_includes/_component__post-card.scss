@@ -7,9 +7,15 @@
 .post__card {
   transition: all 120ms;
   box-sizing: content-box;
+  transition: all 120ms;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-sizing: content-box;
+  background: rgba(79, 84 ,87, 0.45);
 
   &:hover {
     transform: translateY(-4px);
+    background-color: rgba(76, 96, 230, 0.5);
   }
 
   .post__link {
@@ -23,6 +29,17 @@
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 16px;
+  }
+  
+  .post__title {
+    font-family: Berkeley Mono;
+    margin-bottom: 12px;
+    line-height: 1em;
+    overflow-wrap: anywhere;
+
+    @media only screen and (max-width: 375px) {
+      font-size: 3.03em;
+    }
   }
 
   .post__date {

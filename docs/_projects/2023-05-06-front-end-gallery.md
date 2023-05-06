@@ -1,56 +1,12 @@
-<section>
-  <div class="title">
-    <h1 data-aos="fade-right" class="title_font">
-      Software <span style="color: #4c60e6">Engineer</span>, based in London,
-      with a focus on operating at the intersection of science and
-      <span class="arts" style="color: #4c60e6"></span>
-    </h1>
-    <div class="main_subtitle">
-      <p data-aos="fade-down">
-        Finding <span style="color: #4c60e6">elegant</span> solutions to complex
-        problems.
-      </p>
-    </div>
-  </div>
-  <div class="title__socials">
-    <!-- <img class='me__image' src="../images/me_baggie.gif" data-aos='fade-left'> -->
-    <div data-aos="fade-up">{% include component-socials.html %}</div>
-  </div>
-</section>
+---
+title: Collection of design related items.
+layout: projects
+subtitle: Some designs I've produced over the years
+description: A data science project that explores the Sydney property market across different suburbs using a dataset from Kaggle.
+featured_image: '' 
+---
 
-<section class="section_projects">
-  <p class="project_heading" data-aos="fade-right">// RECENT WORK.</p>
-  {% for project in site.projects reversed %}
-
-  <div class="project_item" data-aos="fade-in">
-    <h4 class="project_item_number">
-      {{ forloop.index | prepend: '00' | slice: -2, 2 }}
-    </h4>
-
-    <div>
-      <h3 class="project_font">
-        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-      </h3>
-      <p>{{project.subtitle}}</p>
-    </div>
-  </div>
-  <hr />
-
-  {% endfor %}
-</section>
-
-<!-- <p class="gallery_heading" data-aos="fade-right">// FRONT-END GALLERY.</p> -->
-
-<!-- {% include post-components/gallery_landing.html
-	columns = 2
-
-	images = "../images/gallery/nft-screenshot-lg.png,../images/gallery/stats-preview.png"
-
-	links = "https://rococo-hamster-1bb83d.netlify.app/,https://fastidious-wisp-afb1f4.netlify.app/"
-	
-%} -->
-
-<!-- <div
+<div
   id="carouselExampleControls"
   class="carousel slide"
   data-ride="carousel"
@@ -136,36 +92,4 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div> -->
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="../js/lax.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-<script>
-  AOS.init({
-    easing: "ease-out-back",
-    anchorPlacement: "top-center",
-  });
-</script>
-
-<script>
-  window.onload = function () {
-    lax.init();
-
-    // Add a driver that we use to control our animations
-    lax.addDriver("scrollY", function () {
-      return window.scrollY;
-    });
-  };
-</script>
-
-<script>
-  var typed = new Typed(".arts", {
-    // Waits 1000ms after typing "First"
-    strings: ["painting", "architecture", "fashion", "literature", "arts."],
-    showCursor: false,
-    typeSpeed: 25,
-  });
-</script>
+</div>

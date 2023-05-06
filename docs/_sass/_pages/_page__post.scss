@@ -10,11 +10,14 @@
   }
 
   .post__title {
+    font-family: Berkeley Mono;
+    font-size: 4.186em;
     margin-bottom: 16px;
     overflow-wrap: break-word;
   }
 
   .post__date {
+    font-size: 1em;
     margin-bottom: 48px;
   }
 
@@ -330,8 +333,10 @@
 .post__more {
   margin-bottom: 120px;
   grid-gap: 20px;
-
+  
   a {
+    font-size: 1.2em;
+    font-family: Berkeley Mono;
     padding: 32px 30px;
     border: 1px solid $border-color;
     border-radius: 8px;

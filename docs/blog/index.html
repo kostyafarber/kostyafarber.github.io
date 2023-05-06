@@ -8,24 +8,24 @@ categories: First
 
 <div class="page-blog">
 
-		<div>
+		<!-- <div> -->
 			{% include section__blog.html %}
-		</div>
+		<!-- </div> -->
 
 	<section class="all-posts">
 		<div class="wrap">
 			<div class="posts__list grid">
-				{% for post in paginator.posts %}
-				{% if forloop.first == true %}
-				<article class="post post-new">
+				{% for post in site.posts %}
+				<!-- {% if forloop.first == true %} -->
+				<!-- <article class="post post-new">
 					<div class="grid">
 						<a href="{{ post.url | relative_url }}">
 							<div class="post__image{% if paginator.page == 1 %} post__image--new{% endif %}"
 								style="background-image: url({{ post.featured_image | relative_url }})">
-							</div>
-						</a>
+							</div> -->
+						<!-- </a> -->
 
-						<div class="post__content-wrap">
+						<!-- <div class="post__content-wrap">
 							<div class="post__content">
 								<time class="post__date label--small">{{ post.date | date: "%B %d, %Y" }}</time>
 								<h2 class="post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
@@ -35,18 +35,18 @@ categories: First
 							</div>
 						</div>
 					</div>
-				</article>
-				{% else %}
-				{% include component__post-preview.html %}
-				{% endif %}
+				</article> --> 
+				<!-- {% else %} -->
+					{% include component__post-preview.html %}
+				<!-- {% endif %} -->
 				{% endfor %}
 			</div>
 		</div>
 	</section>
 
-	{% if paginator.total_pages > 1 %}
+	<!-- {% if paginator.total_pages > 1 %} -->
 
-	<section class="pagination">
+	<!-- <section class="pagination">
 		<div class="wrap">
 			{% if paginator.previous_page %}
 			<a href="{{ paginator.previous_page_path | relative_url }}"
@@ -57,7 +57,7 @@ categories: First
 				class="button--text--accent --right pagination__next">Older Posts</a>
 			{% endif %}
 		</div>
-	</section>
+	</section> -->
 
-	{% endif %}
+	<!-- {% endif %} -->
 </div>
