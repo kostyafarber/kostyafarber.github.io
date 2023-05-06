@@ -18,6 +18,11 @@
     src: url('../fonts/founders-grotesk-web-light.woff2') format('woff2');
   }
 
+  @font-face {
+	font-family: 'Berkeley Mono Regular';
+	src: url('../fonts/BerkeleyMono-Regular.woff2') format('woff2');
+  }
+
 html, body {
 	height: 100%;
 }
