@@ -11,9 +11,16 @@
 
   .post__title {
     font-family: Berkeley Mono;
-    font-size: 4.186em;
+    font-size: 2.5em;
+    padding-left: 10px;
+    border-left: 15px solid #E6D24C;
     margin-bottom: 16px;
     overflow-wrap: break-word;
+  }
+
+
+  @include mq(tabletp) {
+    // font-size: 2.5em;
   }
 
   .post__date {

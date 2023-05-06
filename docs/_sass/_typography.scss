@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: 'Berkeley Mono Regular';
+  font-family: 'Berkeley Mono';
   src: url('/fonts/BerkeleyMono-Regular.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
@@ -49,6 +49,7 @@ h6,
 
 h1,
 .h1 {
+  // font-size: $h1-size-small;
   font-size: $h1-size-small;
   letter-spacing: $h1-spacing-small;
   line-height: $h1-lineheight-small;
