@@ -219,12 +219,12 @@ a {
 }
 
 .label {
-  font-family: $body-font;
+  font-family: VT323;
   font-size: $label-size;
   font-weight: bold;
   line-height: $label-lineheight;
-  letter-spacing: $label-spacing;
-  color: $text-light-color;
+  letter-spacing: 0.16em;
+  color: #4AF626;
   text-transform: uppercase;
 
   &--small {

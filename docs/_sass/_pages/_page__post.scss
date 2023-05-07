@@ -6,7 +6,7 @@
 
 .page-post {
   .post__header {
-    padding-bottom: 48px;
+    // padding-bottom: 48px;
   }
 
   .post__title {
@@ -75,7 +75,7 @@
     }
 
     h2 {
-      margin: 80px 0 16px;
+      margin: 1rem 0 16px;
     }
 
     h3,
@@ -293,7 +293,7 @@
 
   @include mq(tabletp) {
     .post__header {
-      padding-bottom: 80px;
+      // padding-bottom: 80px;
     }
 
     .post__title {
@@ -301,7 +301,6 @@
     }
 
     .post__date {
-      margin-bottom: 80px;
     }
 
     .post__content {
@@ -353,6 +352,7 @@
   .prev-post::before,
   .next-post::before {
     display: block;
+    letter-spacing: 0.16em;
     @extend .label--small;
     margin-bottom: 8px;
   }
@@ -365,16 +365,16 @@
     content: "Next Post";
   }
 
-  .prev-post::after,
-  .next-post::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 12px;
-    background: url($baseurl + "/images/icons/arrow-left-gray.svg") center center no-repeat;
-    position: absolute;
-    top: calc(50% - 6px);
-  }
+  // .prev-post::after,
+  // .next-post::after {
+  //   content: "";
+  //   display: block;
+  //   width: 20px;
+  //   height: 12px;
+  //   background: url($baseurl + "/images/icons/arrow-left-gray.svg") center center no-repeat;
+  //   position: absolute;
+  //   top: calc(50% - 6px);
+  // }
 
   .next-post::after {
     right: 30px;
