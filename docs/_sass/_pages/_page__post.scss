@@ -58,6 +58,15 @@
       margin-bottom: 16px;
     }
 
+    p a {
+      color:#a5d6ff;
+
+      &:hover {
+        // background: $text-light-color;
+        color: #427bab 
+      }
+    } 
+
     ul,
     ol {
       margin-bottom: 24px;
