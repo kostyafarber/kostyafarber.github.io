@@ -197,9 +197,10 @@ input[type="text"],
 input[type="email"],
 textarea {
 	background-color: black;
-  display: block;
-  border: 0;
-  border-bottom: 1px solid $border-color;
+	display: block;
+	border: 0;
+	border-bottom: 1px solid $border-color;
+	color: white;
   @extend p;
 	padding: 12px 0 16px;
 	

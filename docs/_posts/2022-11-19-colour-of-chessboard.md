@@ -8,8 +8,7 @@ tags: data-structures algorithms breadth-first-search art copenhagen contemporar
 author: Kostya Farber
 ---
 
-# Problem
-## Difficulty: <span style="color:green">Easy</span>
+## Problem
 Today I solved another problem in both `python` and `c++`. 
 
 > You are given coordinates, a string that represents the coordinates of a square of the chessboard. 

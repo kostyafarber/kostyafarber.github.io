@@ -11,6 +11,8 @@ hero_settings:
 
 menu_settings:
   menu_items:
+    - title: About
+      url: '/about/'
     - title: 'Blog'
       url: '/blog/'
 
@@ -69,9 +71,9 @@ color_settings:
 
 font_settings:
   title_font: 'Founders Grotesk bold'
-  body_font: 'Founders Grotesk light'
-  regular_weight: 400
-  bold_weight: 700
+  body_font: 'Rubik'
+  regular_weight: 0
+  bold_weight: 0
   site_title:
     small_size: 2 
     medium_size: 2
@@ -85,23 +87,23 @@ font_settings:
     weight: 600
     letter_spacing: -0.08
   h1:
-    size: 7.986
-    size_small: 4.13
+    size: 3.052
+    size_small: 3.042
     weight: 700
     letter_spacing: -0.04
     letter_spacing_small: -0.04
-    line_height: 0.85
-    line_height_small: 0.85
+    line_height: 4
+    line_height_small: 3.45
   h2:
-    size: 4.5
-    size_small: 2.035
+    size: 2.441
+    size_small: 2.411
     weight: 700
     letter_spacing: -0.04
     letter_spacing_small: -0.04
-    line_height: 0.65
-    line_height_small: 0.75 
+    line_height: 1.85
+    line_height_small: 2 
   h3:
-    size: 3.16
+    size: 1.953
     size_small: 2.5
     weight: 700
     letter_spacing: -0.04
@@ -109,16 +111,15 @@ font_settings:
     line_height: 0.65 
     line_height_small: 1
   h4:
-    size: 2.117
+    size: 1.563
     size_small: 1
     weight: 700
     letter_spacing: -0.04
     letter_spacing_small: -0.04
     line_height: 0.8
   h5:
-    small_size: 1.8
-    medium_size: 1.5
-    large_size: 1
+    size: 1.25
+    small: 1.5
     weight: 700
     letter_spacing: -0.04
     line_height: 0.8
@@ -136,10 +137,10 @@ font_settings:
     weight_heavy: 500
     letter_spacing: -0.06
     letter_spacing_small: -0.06
-    line_height: 1
+    line_height: 2.5
     line_height_small: 1.5
   p:
-    size: 1.25
+    size: 1.125
     size_small: 1
     weight: 300
     letter_spacing: 0.02
@@ -153,7 +154,7 @@ font_settings:
     line_height: 1.5
   label:
     size: 2
-    small_size: 1
+    small_size: 0.8
     weight: 500
     letter_spacing: -0.04
     small_letter_spacing: -0.04

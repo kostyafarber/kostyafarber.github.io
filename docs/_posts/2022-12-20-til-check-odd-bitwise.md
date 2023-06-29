@@ -13,9 +13,10 @@ We can use the bitwise operator `&` to check if an integer is odd. Bitwise opera
 
 ## Example
 
-`01001001`
-
-`00101000`
+```c
+01001001
+00101000
+```
 
 If we take the example above and `&` it we get:
 
@@ -29,30 +30,33 @@ The idea is if the least significant bit (the right most bit) is 'on' (equal to 
 ## Odd
 For example the number 17 in binary is:
 
-`10001`
+```c
+10001
+```
 
 If we `&` this with one:
 
-`10001 &`
-
-`00001`
-
-= `00001`
+```c
+10001 &
+00001
+-----
+00001
+```
 
 We get a `1`, meaning it is odd. 
 
 ## Even
 Contrast that with 12:
 
-`1100 &`
-
-`0001`
-
-= `0000`
-
+```c
+1100 &
+0001
+----
+0000
+```
 We get `0`, which means the number is even. 
 
-Next time you want to check even and odd numbers, this may be a quicker way then using `n % 2 == 0`. Or better yet just run the code below and see for yourself 😏
+Next time you want to check even and odd numbers, this may be a quicker way then using `n % 2 == 0`. Or better yet just run the code below and see for yourself.
 
 
 ```python

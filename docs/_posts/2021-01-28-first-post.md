@@ -6,14 +6,8 @@ featured_image: '/images/posts/storytelling.jpg'
 tags: blogging 
 author: Kostya Farber
 ---
-Learning through Contemplative Writing
-==============================
-
-<br>
-
-##### Writing and documenting my experiences programming may be the best way for me to really make things stick.
-
-<br>
+## Learning through Contemplative Writing
+Writing and documenting my experiences programming may be the best way for me to really make things stick.
 
 As a student I always preferred doing assignments rather than sitting exams. Something about writing on topics I found
 hard to understand helped consolidate that information in my head. Doing research and organising my ideas into a structured
@@ -26,9 +20,7 @@ Having a place where I can share these discoveries and contemplate and reflect o
 ultimately understanding. It also gives me an excuse to write whilst producing actionable and measurable goals, such as a blog post. 
 
 
-Thus, my foray into blogging begins with a simple objective. **To gain a deeper understanding of topics I find interesting.** 
-
-To finish off I will share why I chose the picture I used as the feature image. The painting,
+Thus, my foray into blogging begins with a simple objective. **To gain a deeper understanding of topics I find interesting.** To finish off I will share why I chose the picture I used as the feature image. The painting,
 
 ![](/images/posts/storytelling.jpg)
 

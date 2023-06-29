@@ -83,22 +83,30 @@
 }
 
 .project_font {
+  margin-bottom: 1rem;
   font-family: 'Founders Grotesk bold';
-  font-size: 2.46em;
+  font-size: $h2-size;
   @media only screen and (max-width: 425px) {
-    font-size: 1.4em;
+    font-size: 2em;
+    line-height: 1.5rem;
+    letter-spacing: -.04rem;
   }
 }
 
 .technologies {
-  font-family: VT323;
-  font-size: 3em;
+  font-family: London Underground;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: normal;
   animation: floatText 25s infinite linear;
   padding-left: 150%;
   display: inline-block;
   white-space: nowrap;
+  color: #ec5d29;
+  margin-top: 1rem;
+  @media only screen and (max-width: 425px) { 
+    font-size: 2rem;
+  }
 }
 
 @keyframes floatText {

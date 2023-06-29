@@ -18,6 +18,9 @@ collections:
   notebooks:
     output: true
     permalink: /notebooks/:slug
+  about:
+    output: true
+    permalink: /about/:slug
 
 defaults:
   -

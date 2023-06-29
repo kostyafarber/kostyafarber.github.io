@@ -13,7 +13,7 @@ Open flags are specified as macros provided to pass to the system call `open()`,
 
 They can look like
 
-```bash
+```c
 #define O_RDONLY        0b00000000 
 #define O_CREAT         0b00000100 
 #define O_TRUNC         0b00001000
@@ -21,11 +21,11 @@ They can look like
 
 We can define a combination of these flags using the logical `|` like so 
 
-```bash
+```c
 O_RDONLY | O_CREAT | O_TRUC
 ```
 which in binary looks like
-```bash
+```c
 0b00001100
 ```
 

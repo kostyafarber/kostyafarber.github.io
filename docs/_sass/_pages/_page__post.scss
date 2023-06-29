@@ -11,11 +11,16 @@
 
   .post__title {
     font-family: Berkeley Mono;
-    font-size: 2.5em;
+    font-size: $h1-size;
     padding-left: 10px;
     border-left: 15px solid #E6D24C;
     margin-bottom: 16px;
     overflow-wrap: break-word;
+
+    @media only screen and (max-width: 425px) {
+      font-size: $h1-size-small;
+      line-height: $h1-lineheight-small;
+    }
   }
 
 
@@ -84,7 +89,7 @@
     }
 
     h2 {
-      margin: 2rem 0 1rem;
+      margin: 2rem 0 1.875rem;
     }
 
     h3,
@@ -309,9 +314,6 @@
       margin-bottom: 32px;
     }
 
-    .post__date {
-    }
-
     .post__content {
       margin-bottom: 120px;
 
@@ -320,11 +322,11 @@
       }
 
       h3 {
-        margin: 1.5rem 0 12px;
+        margin: 2rem 0 1rem;
       }
 
       h4 {
-        margin: 2.5rem 0 24px;
+        margin: 2rem 0 1;
       }
 
       blockquote {
@@ -356,6 +358,7 @@
     border: 1px solid $border-color;
     border-radius: 8px;
     position: relative;
+    line-height: 1.5rem;
   }
 
   .prev-post::before,
@@ -363,7 +366,8 @@
     display: block;
     letter-spacing: 0.16em;
     @extend .label--small;
-    margin-bottom: 8px;
+    font-size: 0.8em;
+    margin-bottom: 1rem;
   }
 
   .prev-post::before {

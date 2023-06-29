@@ -29,6 +29,24 @@
 }
 
 
+@font-face {
+  font-family: 'London Underground';
+  src: url('/fonts/London-Underground-Regular.ttf') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Mondwest';
+  src: url('/fonts/PPMondwest-Regular.otf') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 h1,
 .h1,
 h2,
@@ -66,7 +84,7 @@ h2,
 .h2 {
   font-size: $h2-size-small;
   letter-spacing: $h2-spacing-small;
-  line-height: $h2-lineheight-small;
+  line-height: $h2-lineheight;
   font-weight: $h2-weight;
 
   @include mq(tabletp) {
@@ -111,7 +129,7 @@ h5,
   letter-spacing: $h5-spacing;
 
   @include mq(tabletp) {
-    font-size: $h5-medium;
+    font-size: $h5-small;
   }
 }
 
@@ -140,7 +158,7 @@ h6,
   line-height: $subtitle-lineheight-small;
 
   &--light {
-    @extend .subtitle;
+    font-weight: 1.2rem;
     font-weight: $subtitle-weight-regular;
   }
 
@@ -219,12 +237,12 @@ a {
 }
 
 .label {
-  font-family: VT323;
+  font-family: London Underground;
   font-size: $label-size;
   font-weight: bold;
   line-height: $label-lineheight;
   letter-spacing: 0.16em;
-  color: #4AF626;
+  color: #f7f27f;
   text-transform: uppercase;
 
   &--small {
@@ -260,7 +278,7 @@ time {
 }
 
 code {
-  font-family: Berkeley Mono;
+  font-family: Mono;
   padding: .2em .4em;
   margin: 0;
   font-size: 95%;
@@ -269,7 +287,7 @@ code {
 }
 
 .language-plaintext {
-  font-family: monospace;
+  font-family: Berkeley Mono;
   padding: .2em .4em;
   margin: 0;
   font-size: 75%;

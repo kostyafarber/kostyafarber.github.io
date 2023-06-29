@@ -227,7 +227,7 @@ Intuitively, in Lomuto we left out the pivot (we pass `(low...p - 1) and (p + 1.
 
 This left me with more questions than answers and me being me I wanted to fully understand *why* we are making all these choices. I will try tackle these to the best of my understanding and try learn something along the way.
 
-### Why do we use `<` and `>` here instead of `>=` like Lomuto?
+### Why do we use \\(<\\) and \\(>\\) here instead of \\(>=\\) like Lomuto?
 This one was one of the more simple ones. Per [wikipedia](https://en.wikipedia.org/wiki/Quicksort#Hoare_partition_scheme:~:text=With%20respect%20to,the%20first%20inversion), I found the explanation a bit hard to follow, but the gist is we do this so we don't have to run any bounds checks on our pointers. Why? Let me demonstrate with a simple example.
 
 Say we have a simple array:

@@ -7,7 +7,7 @@
 
   <div class='project_item'>            
     <h4 class='project_item_number'>{{ forloop.index | prepend: '00' | slice: -2, 2 }}</h4>
-    <h3 class='project_font'><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+    <h2 class='project_font'><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
   </div>
   <hr>
 

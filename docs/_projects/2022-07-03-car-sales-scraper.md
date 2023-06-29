@@ -13,7 +13,7 @@ project_icons:
 ---
 
 <div class='technologies'>
-Python.BeautifulSoup.AWSLambda.AWSDynamoDB.AWSSNS.
+Python BeautifulSoup AWSLambda AWSDynamoDB AWSSNS 
 </div>
 ## Motivation
 

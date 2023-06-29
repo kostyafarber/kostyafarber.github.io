@@ -13,9 +13,10 @@ layout: default
 			<h2 class="post__subtitle subtitle--light">{{ page.subtitle }}</h2>
 		</div>
 
-		
+		{% if page.featured_image %}	
 		<img src="{{ '/images/projects/' | relative_url}}{{ page.featured_image }}" class="project__featured-image">
-		
+		{% endif %}
+
 		{% include component-project-links.html %}
 
 	</header>
@@ -23,7 +24,7 @@ layout: default
 
 	<section class="post-full">
 
-		<div class="wrap">
+		<div class="wrap__blog">
 
 			<article class="post__content {% if page.highlight_first %}highlight-first{% endif %}">
 				{{ page.content }}

@@ -35,15 +35,16 @@
     font-family: Berkeley Mono;
     margin-bottom: 12px;
     line-height: 1em;
+    font-size: $h5-size;
     overflow-wrap: anywhere;
 
-    @media only screen and (max-width: 375px) {
-      font-size: 3.03em;
+    @media only screen and (max-width: 425px) {
+      font-size: $h5-small;
     }
   }
 
   .post__date {
-    margin-bottom: 6px;
+    margin-bottom: 1rem;
   }
 
   @include mq("460px") {
