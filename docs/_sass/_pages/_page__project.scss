@@ -43,9 +43,17 @@
   }
 }
 
+.recent_work {
+  font-family: "Tronica Mono";
+  font-size: 0.85rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .project_heading{
   margin-left: 5%;
   margin-right: 5%;
+  font-family: "Rubik"
 }
 
 .project_item {
@@ -61,7 +69,7 @@
 }
 
 .project_item_number {
-  font-family: Test Founders Grotesk light, sans-serif;
+  font-family: "Tronica Mono";
   letter-spacing: 0em;
   font-size: 1.117em;
   font-weight: 100;
@@ -84,10 +92,22 @@
 
 .project_font {
   margin-bottom: 1rem;
-  font-family: 'Founders Grotesk bold';
-  font-size: $h2-size;
+  font-family: 'Rubik';
+  font-size: 1.641rem;
+  font-weight: 800;
   @media only screen and (max-width: 425px) {
-    font-size: 2em;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: -.04rem;
+  }
+}
+
+.project_subtitle {
+  font-size: 0.825rem;
+  @media only screen and (max-width: 425px) {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
     line-height: 1.5rem;
     letter-spacing: -.04rem;
   }

@@ -10,16 +10,17 @@
   }
 
   .post__title {
-    font-family: Berkeley Mono;
-    font-size: $h1-size;
+    font-family: "Tronica Mono";
+    font-size: 2.652rem;
+    line-height: 2.5rem;
     padding-left: 10px;
     border-left: 15px solid #E6D24C;
     margin-bottom: 16px;
     overflow-wrap: break-word;
 
     @media only screen and (max-width: 425px) {
-      font-size: $h1-size-small;
-      line-height: $h1-lineheight-small;
+      font-size: 2.422rem;
+      line-height: 2.65rem;
     }
   }
 

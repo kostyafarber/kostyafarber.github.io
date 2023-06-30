@@ -115,12 +115,16 @@ The Order Book Imbalance is the difference between the best bid and best ask qua
 
 The Order Book Imbalance measures whether the limit order book is buy or sell heavy. In fact, it is a good predictor of price direction.
 
+
 ## Designing the Architecture
 Having all the groundwork laid in place I went about deciding on how I wanted to design this system. To make things simpler and get my hands dirty with the current trend of microservices, I wanted to use Docker and Kafka to build a simple and scalable ETL pipeline.
+
+<img src='../images/projects/kafka-docker-project/notebook_feature.png'>
 
 ## Docker
 Docker is a valuable tool for developers to ship and deploy their apps in an easy and accessible way. We can create *containers* that are self-contained environments that house our applications. Taking this a step further, we can decouple our system and build a microservices architecture by having our services in their own docker containers. I will use Docker to containerize a few services used for the data pipeline built using Kafka.
 ## Kafka
+
 Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications. It uses a publisher and subscriber architecture, both of which are decoupled from the core functionality of Kafka. Apache Kafka has an API in Python called `kafka-python`. Using `kakfa-python` I am able to build the data pipeline using Python.
 
 ## Data Pipeline

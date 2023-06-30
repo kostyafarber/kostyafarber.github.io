@@ -96,12 +96,13 @@ hr {
 
 .title__heading {
     @media only screen and (max-width: 425px) {
-        font-size: 3.352rem;
+        font-size: 2.252rem;
     }
     margin-bottom: 1rem;
-    font-size: 4.252rem;
+        font-size: 3.352rem;
     color: black;
-    font-family: "PP Mondwest";
+    font-family: "Tronica Mono";
+    letter-spacing: -0.24rem;
 }
 
 .about__paragraph {

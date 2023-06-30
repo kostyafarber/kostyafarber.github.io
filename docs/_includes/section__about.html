@@ -19,24 +19,27 @@
 </section>
 
 <section class="section_projects">
-  <p class="project_heading" data-aos="fade-right">// RECENT WORK.</p>
-  {% for project in site.projects reversed %}
+  <div>
 
-  <div class="project_item" data-aos="fade-in">
-    <h4 class="project_item_number">
-      {{ forloop.index | prepend: '00' | slice: -2, 2 }}
-    </h4>
-
-    <div>
-      <h3 class="project_font">
-        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-      </h3>
-      <p>{{project.subtitle}}</p>
+    <p class="recent_work" data-aos="fade-right">// RECENT WORK.</p>
+    {% for project in site.projects reversed %}
+  
+    <div class="project_item" data-aos="fade-in">
+      <h4 class="project_item_number">
+        {{ forloop.index | prepend: '00' | slice: -2, 2 }}
+      </h4>
+  
+      <div>
+        <h3 class="project_font">
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        </h3>
+        <p class="project_subtitle">{{project.subtitle}}</p>
+      </div>
     </div>
+    <hr />
+  
+    {% endfor %}
   </div>
-  <hr />
-
-  {% endfor %}
 </section>
 
 <!-- <p class="gallery_heading" data-aos="fade-right">// FRONT-END GALLERY.</p> -->
