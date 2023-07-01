@@ -1,6 +1,7 @@
 ---
 title: Bitcoin Real-Time Streaming Data Pipeline.
 layout: projects
+item_colour: "#0039a6"
 subtitle: A DevOps project utilising Docker, Kafka and Microservice Architecture Principles.
 description: A data science project that explores the Sydney property market across different suburbs using a dataset from Kaggle.
 featured_image: 'kafka-docker-project/notebook_feature.png'

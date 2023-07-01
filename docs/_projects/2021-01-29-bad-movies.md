@@ -1,6 +1,7 @@
 ---
 title: B-Movie Text Generator.
 subtitle: What if a robot could write b-movies?
+item_colour: "#b933ad"
 description: An analysis of a list me and my friends have compiled over the years whilst watching films that we considered so bad they were good. Suffice to say, not all of them where as funny as we thought. I decided to dig deeper and find out if artificial intelligence could match these great writers.
 featured_image: 'trash_movies/gba_animation.gif'
 gallery_images:

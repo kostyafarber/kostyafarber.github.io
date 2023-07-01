@@ -1,6 +1,7 @@
 ---
 title: Car Sales Scraper.
 layout: projects
+item_colour: "#6cbe45"
 subtitle: A web scraper that helped sell my car using a data-driven approach
 description: An AWS solution that scrapes car prices from carsales.com.au and using BeautifulSoup, AWS Lambda, AWS DynamoDB and AWS SNS. I used this data to price my car and sell it before moving to London.
 featured_image: 'car_sales_scraper/news-ad.png'

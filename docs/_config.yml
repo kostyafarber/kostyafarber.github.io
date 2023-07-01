@@ -73,6 +73,10 @@ kramdown:
 sass:
   style: compressed
 
+item_colours:
+  - red
+  - blue
+  
 plugins:
   - jekyll-sitemap
   - jekyll-jupyter-notebook

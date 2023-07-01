@@ -1,29 +1,31 @@
 <section>
   <div>
-    <h2 class="recent_work">Recent Work.</h2>
-  </div>
-
-  {% for project in site.projects reversed %}
-
-  <div class='project_item'>            
-    <h4 class='project_item_number'>{{ forloop.index | prepend: '00' | slice: -2, 2 }}</h4>
-    <h2 class='project_font'><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-  </div>
-  <hr>
-
-  {% endfor %}
-</section>
-
-<script src="../js/lax.min.js"></script>
-
-<script>
-  window.onload = function () {
-    lax.init()
-
-    // Add a driver that we use to control our animations
-    lax.addDriver('scrollY', function () {
-      return window.scrollY
-    })
-  }
-</script>
+    <div>
+      <h2 class="recent_work">Recent Work.</h2>
+    </div>
+  
+    {% for project in site.projects reversed %}
+  
+    <div class='project_item'>            
+      <h4 class='project_item_number'>{{ forloop.index | prepend: '00' | slice: -2, 2 }}</h4>
+      <h2 class='project_font'><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+    </div>
+    <hr>
+  
+    {% endfor %}
+  </section>
+  
+  <script src="../js/lax.min.js"></script>
+  
+  <script>
+    window.onload = function () {
+      lax.init()
+  
+      // Add a driver that we use to control our animations
+      lax.addDriver('scrollY', function () {
+        return window.scrollY
+      })
+    }
+  </script>
+</div>
 
