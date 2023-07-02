@@ -10,6 +10,14 @@
   flex-direction: column;
 }
 
+.project_title {
+  margin-bottom: 5rem;
+  font-family: "Berkeley Mono";
+  font-size: 2.652rem;
+  line-height: 2.5rem;
+  overflow-wrap: break-word;
+}
+
 .page-project {
   @extend .page-post;
 
@@ -56,7 +64,7 @@
   margin-right: 5%;
 }
 
-.project_heading{
+.project_heading {
   margin-left: 5%;
   margin-right: 5%;
   font-family: "Rubik"
@@ -105,9 +113,9 @@
 
 .project_font {
   margin-bottom: 1rem;
-  font-family: 'Rubik';
+  font-family: "Founders Grotesk Light";
   font-size: 1.641rem;
-  font-weight: 800;
+  font-weight: 300;
   @media only screen and (max-width: 425px) {
     margin-bottom: 0.5rem;
     font-size: 1.3rem;

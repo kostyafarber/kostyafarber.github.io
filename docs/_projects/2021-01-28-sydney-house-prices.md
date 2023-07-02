@@ -1,5 +1,5 @@
 ---
-title: Sydney Property Prices Dashboard.
+title: Sydney Property Prices Dashboard
 layout: projects
 item_colour: "#00add0"
 subtitle: A dashboard built from scratch
@@ -8,16 +8,12 @@ featured_image: 'sydneyhouseprices/dashboard-white.png'
 home_image: 'sydneyhouseprices/dashboard-white.png'
 gallery_images: 
     -  'sydneyhouseprices/dashboard-white.png'
-project_icons:
-    - url: 'https://sydneyhouseprices-dashboard.herokuapp.com/'
-      icon_name: 'heroku'
-    - url: 'https://github.com/kostyafarber/sydneyhouseprices-dashboard'
-      icon_name: 'github'
+# # project_icons:
+# #     - url: 'https://sydneyhouseprices-dashboard.herokuapp.com/'
+# #       icon_name: 'heroku'
+# #     - url: 'https://github.com/kostyafarber/sydneyhouseprices-dashboard'
+#       icon_name: 'github'
 ---
-
-<div class=technologies>
-Pandas.Matplotlib.Seaborn.Heroku.GitHub.NumPy.Python
-</div>
 
 ## The Motivation
 
@@ -38,3 +34,5 @@ a few results, but being the typical Sydney resident, data of property prices se
 - The data was obtained from Kaggle, a dataset with over 100,000 entries scraped from realestate.com.
 - Data wrangling, Exploratory Data Analysis and Data Visualisations were performed using Python and documented in both static and executable (using Binder) Jupyter Notebook for reproducibility.
 - All code and project details are open-source and shared on GitHub. 
+
+source: [https://github.com/kostyafarber/sydneyhouseprices-dashboard](https://github.com/kostyafarber/sydneyhouseprices-dashboard)

@@ -1,5 +1,5 @@
 ---
-title: Bitcoin Real-Time Streaming Data Pipeline.
+title: Bitcoin Real-Time Streaming Data Pipeline
 layout: projects
 item_colour: "#0039a6"
 subtitle: A DevOps project utilising Docker, Kafka and Microservice Architecture Principles.
@@ -8,14 +8,10 @@ featured_image: 'kafka-docker-project/notebook_feature.png'
 home_image: 'kafka-docker-project/notebook_feature.png'
 gallery_images: 
     -  'kafka-docker-project/notebook_feature.png'
-project_icons:
-    - url: 'https://github.com/kostyafarber/crypto-lob-data-pipeline'
-      icon_name: 'github'
+# project_icons:
+#     - url: 'https://github.com/kostyafarber/crypto-lob-data-pipeline'
+#       icon_name: 'github'
 ---
-
-<div class=technologies>
-Docker.Kafka.Deribit.Python.Pandas.
-</div>
 
 ## Algorithmic Trading
 I originally intended to create an algorithmic trading system based on limit order book (LOB) data. I wanted to trade cryptocurrency **perpetual** futures. 

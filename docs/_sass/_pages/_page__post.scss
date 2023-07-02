@@ -10,12 +10,10 @@
   }
 
   .post__title {
-    font-family: "Tronica Mono";
+    font-family: "Berkeley Mono";
     font-size: 2.652rem;
     line-height: 2.5rem;
-    padding-left: 10px;
-    border-left: 15px solid #E6D24C;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     overflow-wrap: break-word;
 
     @media only screen and (max-width: 425px) {
@@ -30,7 +28,7 @@
   }
 
   .post__date {
-    font-size: 1em;
+    font-size: 0.65em;
     margin-bottom: 48px;
   }
 
@@ -90,12 +88,12 @@
     }
 
     h2 {
-      margin: 2rem 0 1.875rem;
+      margin: 2.5rem 0 1rem;
     }
 
     h3,
     h4 {
-      margin: 2rem 0 1rem;
+      margin: 2.5rem 0 1rem;
     }
 
     .table-wrap {
@@ -311,9 +309,9 @@
       // padding-bottom: 80px;
     }
 
-    .post__title {
-      margin-bottom: 32px;
-    }
+    // .post__title {
+    //   margin-bottom: 32px;
+    // }
 
     .post__content {
       margin-bottom: 120px;

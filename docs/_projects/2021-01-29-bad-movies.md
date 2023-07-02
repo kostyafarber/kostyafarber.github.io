@@ -1,20 +1,16 @@
 ---
-title: B-Movie Text Generator.
+title: B-Movie Text Generator
 subtitle: What if a robot could write b-movies?
 item_colour: "#b933ad"
 description: An analysis of a list me and my friends have compiled over the years whilst watching films that we considered so bad they were good. Suffice to say, not all of them where as funny as we thought. I decided to dig deeper and find out if artificial intelligence could match these great writers.
 featured_image: 'trash_movies/gba_animation.gif'
 gallery_images:
 - trash_movies/gba_animation.gif
-home_image: trash_movies/gba_animation.gif
-project_icons:
-    - url: 'https://github.com/kostyafarber/bad-movies'
-      icon_name: 'github'
+# home_image: trash_movies/gba_animation.gif
+# project_icons:
+#     - url: 'https://github.com/kostyafarber/bad-movies'
+#       icon_name: 'github'
 ---
-
-<div class='technologies'>
-NLTK.Pandas.Seaborn.IMDbPy
-</div>
 
 ## Motivation
 
@@ -35,3 +31,5 @@ After listening to this podcast religiously, me and my friends decided, why not 
 movie club is born, and 200+ movies later a rather interesting (to me at least) dataset is produced.
 
 I've always had the idea to create a data science project from our long and silly list, so here it is.
+
+source: [https://github.com/kostyafarber/b-movie-text-generator](https://github.com/kostyafarber/b-movie-text-generator)

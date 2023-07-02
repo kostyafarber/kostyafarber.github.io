@@ -1,5 +1,5 @@
 ---
-title: My Website.
+title: My Website
 layout: projects
 item_colour: "#fccc0a"
 subtitle: A personal portfolio and other things
@@ -8,15 +8,10 @@ featured_image: 'website/iPhone-wide.png'
 home_image: 'website/iPhone-wide.png'
 gallery_images: 
     -  'website/iPhone-wide.png'
-project_icons:
-    - url: 'https://github.com/kostyafarber/kostyafarber.github.io'
-      icon_name: 'github'
+# project_icons:
+#     - url: 'https://github.com/kostyafarber/kostyafarber.github.io'
+#       icon_name: 'github'
 ---
-
-<div class='technologies'>
-JavaScript.Jekyll.GitHubPages.CSS.HTML.Markdown.SCSS.Canva.
-</div>
-
 ## My Personal Portfolio
 
 I decided to build a website to document my work as well as having a place were I can share my writing about topics I find interesting.

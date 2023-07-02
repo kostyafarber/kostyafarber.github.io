@@ -1,5 +1,5 @@
 ---
-title: Car Sales Scraper.
+title: Car Sales Scraper
 layout: projects
 item_colour: "#6cbe45"
 subtitle: A web scraper that helped sell my car using a data-driven approach
@@ -8,14 +8,11 @@ featured_image: 'car_sales_scraper/news-ad.png'
 home_image: 'car_sales_scraper/news-ad.png'
 gallery_images: 
     -  'car_sales_scraper/news-ad.png'
-project_icons:
-    - url: 'https://github.com/kostyafarber/car-sales'
-      icon_name: 'github'
+# project_icons:
+#     - url: 'https://github.com/kostyafarber/car-sales'
+#       icon_name: 'github'
 ---
 
-<div class='technologies'>
-Python BeautifulSoup AWSLambda AWSDynamoDB AWSSNS 
-</div>
 ## Motivation
 
 In mid-2022 I made the move to relocate to London. An inevitable part of moving overseas is getting rid of any belongings you don't need to take with you. One of these belongings was my *2013 Mazda 3 Sedan*. A fundamental question that needs to be answered is:
@@ -75,7 +72,7 @@ Adding this zip to Lambda as a layer allows the managed service to access our pa
 
 Using this solution I was able to get a gauge on the market. Every morning I got updates on the average, median and raw prices. I was able to adjust the prices accordingly day to day. Eventually I successfully sold my car for a good price. Being able to have data to inform my decision put me at ease and allowed me to set prices confidently. Using the cloud made creating this application a breeze and the joy from using technology to help others and myself is priceless!  
 
-
+source: [https://github.com/kostyafarber/car-sales](https://github.com/kostyafarber/car-sales)
 
 
 

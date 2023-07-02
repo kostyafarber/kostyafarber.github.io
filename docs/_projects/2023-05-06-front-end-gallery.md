@@ -1,5 +1,5 @@
 ---
-title: Collection of Design Related Items.
+title: Collection of Design Related Items
 layout: projects
 item_colour: "#ee352e"
 subtitle: Some designs I've produced over the years
@@ -22,7 +22,7 @@ description: A data science project that explores the Sydney property market acr
           />
           <img
             src="../images/gallery/nft-screenshot-lg.png"
-            class="d-block w-75 mx-auto hvr-grow-shadow"
+            class="d-block w-100 mx-auto hvr-grow-shadow"
             alt="nft component screenshot"
           />
         </picture>
