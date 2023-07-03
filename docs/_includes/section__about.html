@@ -32,7 +32,7 @@
       <div>
         <h3 class="project_font">
           {% if project.project_url %}
-          <a href="{{ project.proje ct_url }}">{{ project.title }}</a>
+          <a href="{{ project.project_url }}">{{ project.title }}</a>
           {% else %}
           <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
           {% endif %}
