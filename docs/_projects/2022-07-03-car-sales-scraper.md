@@ -2,6 +2,7 @@
 title: Car Sales Scraper
 layout: projects
 item_colour: "#6cbe45"
+item_font: "black"
 subtitle: A web scraper that helped sell my car using a data-driven approach
 description: An AWS solution that scrapes car prices from carsales.com.au and using BeautifulSoup, AWS Lambda, AWS DynamoDB and AWS SNS. I used this data to price my car and sell it before moving to London.
 featured_image: 'car_sales_scraper/news-ad.png'
@@ -73,9 +74,3 @@ Adding this zip to Lambda as a layer allows the managed service to access our pa
 Using this solution I was able to get a gauge on the market. Every morning I got updates on the average, median and raw prices. I was able to adjust the prices accordingly day to day. Eventually I successfully sold my car for a good price. Being able to have data to inform my decision put me at ease and allowed me to set prices confidently. Using the cloud made creating this application a breeze and the joy from using technology to help others and myself is priceless!  
 
 source: [https://github.com/kostyafarber/car-sales](https://github.com/kostyafarber/car-sales)
-
-
-
-
-
-

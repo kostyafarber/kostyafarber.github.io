@@ -24,13 +24,17 @@
     {% for project in site.projects reversed %}
   
     <div class="project_item" data-aos="fade-in">
-      <h4 class="project_item_number" style="background: {{project.item_colour}};">
+      <h4 class="project_item_number" style="background: {{project.item_colour}}; color: {{project.item_font}};">
         {{ forloop.index | prepend: '00' | slice: -2, 2 }}
       </h4>
       <div>
         <h3 class="project_font">
-          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+          {% if project.project_url%}
+            <a href="{{ project.project_url }}">{{ project.title }}</a>
+          {% else %}
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </h3>
+        {% endif %}
         <p class="project_subtitle">{{project.subtitle}}</p>
       </div>
     </div>

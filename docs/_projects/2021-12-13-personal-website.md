@@ -2,6 +2,7 @@
 title: My Website
 layout: projects
 item_colour: "#fccc0a"
+item_font: "black"
 subtitle: A personal portfolio and other things
 description: A website built with Jekyll and GitHub pages that showcases my projects as well as my blog and other writings.
 featured_image: 'website/iPhone-wide.png'
