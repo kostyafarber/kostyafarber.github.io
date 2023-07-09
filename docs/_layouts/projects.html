@@ -10,6 +10,7 @@ layout: default
 
 		<div class="wrap__blog">
 			<h1 class="project_title">{{ page.title }}</h1>
+			<time class="post__date label">{{ page.date | date_to_long_string }}</time>
 		</div>
 
 		{% include component-project-links.html %}

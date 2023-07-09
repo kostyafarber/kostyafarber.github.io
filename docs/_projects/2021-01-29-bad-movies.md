@@ -17,7 +17,9 @@ gallery_images:
 One of my fond memories of a bygone era was visiting the local video store, the now ancient ***Video Ezy***, to pick up a movie with my friends. We would go
 to each others houses and have a movie marathon and watch all types of films. Some good, some bad.
 
-![Video Ezy](../images/projects/trash_movies/videoezy.jpg)
+<p align="center">
+  <img src="../images/projects/trash_movies/videoezy.jpg" style="border-radius: 25px;"/>
+</p>
 
 Over the years we all naturally became avid *cinephiles*. Analysing films while watching them became a favourite pastime and
 surprisingly, the bad films had plenty of (hilarious) things to analyse. What followed was uncovering a giant underground cult following of all things
