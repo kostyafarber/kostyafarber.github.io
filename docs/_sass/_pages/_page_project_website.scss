@@ -1,0 +1,114 @@
+.grid {
+  @media only screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+}
+
+.font__grotesk {
+  font-size: 4.852rem;
+}
+
+.font__mono {
+  font-size: 2.5;
+  font-family: Berkeley Mono;
+}
+
+.mono__example {
+  font-family: Berkeley Mono;
+  margin: 2.5rem 0 2.5rem !important;
+  line-height: 2.5rem;
+}
+
+.font__london {
+  font-family: London Underground;
+  color: #ecc12e;
+}
+
+.font__mono_tronica {
+  font-family: "Tronica Mono";
+  color: #4af626;
+}
+
+.chars__box {
+  word-break: break-all;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.chars__grotesk {
+  font-size: 1.6rem;
+  margin: 0 !important;
+}
+
+.chars__mono {
+  font-family: Berkeley Mono;
+  font-size: 1rem;
+  margin: 0 !important;
+}
+
+.chars__london {
+  font-family: London Underground;
+  font-size: 1rem;
+  margin: 0 !important;
+}
+
+.chars__mono_tronica {
+  font-family: "Tronica Mono";
+  margin: 0 !important;
+  color: #4af626;
+  font-size: 0.85rem;
+}
+
+.departures {
+  justify-content: flex-end;
+  flex-direction: column;
+  color: #ecc12e;
+}
+
+.departure__item {
+  display: flex;
+  gap: 1rem;
+}
+
+.eta {
+  margin-left: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.grep__item {
+  margin-bottom: 2rem;
+}
+
+.grep__name {
+  padding-left: 1rem;
+}
+
+.code__block {
+  grid-column: span 2;
+  font-size: 0.9rem;
+}
+
+.colour__container {
+  display: flex;
+  gap: 1rem;
+}
+
+.colour__circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+}
+
+.font__desc {
+  grid-column: span 2;
+}

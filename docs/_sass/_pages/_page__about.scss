@@ -1,115 +1,125 @@
 .about__grid {
-    @media only screen and (max-width: 425px) {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 1rem;
-    }
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+  @media only screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .img_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about__item {
-    background: #e6d24c;
-    border-radius: 25px;
-    color: black;
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    font-size: 4.252rem;
+  background: #e6d24c;
+  border-radius: 25px;
+  color: black;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  font-size: 4.252rem;
 }
 
 .colour__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .item {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .work__item {
-    justify-content: flex-start;
-    display: flex;
-    align-items: center;
-    gap: 4vw;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    padding: 1rem;
-    width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding: 1rem;
+  width: 100%;
 }
 
 .work_img {
-    width: 50px;
+  width: 50px;
 }
 
 .work_heading {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .date {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .date_font {
-    font-size: 0.763rem;
-    font-family: Berkeley Mono;
+  font-size: 0.763rem;
+  font-family: Berkeley Mono;
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    background-color: #ECEDEF;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 1.5vh;
+  border: 0;
+  height: 1px;
+  background-color: #ecedef;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 1.5vh;
 }
 
 .company_container {
-    width: 100%;
+  width: 100%;
 }
 
 .position {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 .company {
-    @extend .position;
-    font-weight: 900;
+  @extend .position;
+  font-weight: 900;
 }
 
 .polaroid {
-    @media only screen and (max-width: 425px) {
-        max-width: 100%;
-    }
-    max-width: 500px;
+  @media only screen and (max-width: 425px) {
+    max-width: 100%;
+  }
+  max-width: 500px;
 }
 
 .title__heading {
-    @media only screen and (max-width: 425px) {
-        font-size: 2.252rem;
-    }
-    margin-bottom: 1rem;
-        font-size: 3.352rem;
-    color: black;
-    font-family: "Tronica Mono";
-    letter-spacing: -0.24rem;
+  @media only screen and (max-width: 425px) {
+    font-size: 2.252rem;
+  }
+  margin-bottom: 1rem;
+  font-size: 3.352rem;
+  color: black;
+  font-family: "Tronica Mono";
+  letter-spacing: -0.24rem;
 }
 
 .about__paragraph {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .work__img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.video__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+video {
+  width: 100%;
 }

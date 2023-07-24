@@ -62,7 +62,7 @@ The correct pivot index is returned, which is important to note for the next alg
 ### Psuedocode and implementation
 Below is the psuedocode for the algorithm:
 
-```
+```c
 // Divides array into two partitions
 algorithm partition(A, lo, hi) is 
   pivot := A[hi] // Choose the last element as the pivot
@@ -146,7 +146,7 @@ This algorithm uses two pointers. Let's call them `i` and `j`, both pointing to 
 Essentially this is just swapping values that are not in the correct *relative* position to the pivot. Values that are greater than the pivot should be on the right and vice versa. So we find a pair that are in the wrong place, swap and move forward. Okay no big deal.
 
 Here is the psuedocode:
-```
+```c
 // Divides array into two partitions
 algorithm partition(A, lo, hi) is 
   // Pivot value
@@ -203,7 +203,7 @@ int h_partition(int start, int end, vector<int>& vec) {
 
 Now check out what we pass to our parition function:
 
-```
+```c
 // Sorts a (portion of an) array, divides it into partitions, then sorts those
 algorithm quicksort(A, lo, hi) is 
   if lo >= 0 && hi >= 0 && lo < hi then

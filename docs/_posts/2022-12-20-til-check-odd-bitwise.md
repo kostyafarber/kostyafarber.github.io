@@ -20,7 +20,11 @@ We can use the bitwise operator `&` to check if an integer is odd. Bitwise opera
 
 If we take the example above and `&` it we get:
 
-= `00001000` as only the 5th element had both 1s. 
+```c
+00001000
+```
+
+as only the 5th element had both 1s. 
 
 ## What does this have to do with even and odd numbers? 
 We can use this operator to check if an integer is odd. We do this by `&` any integer with 1. 

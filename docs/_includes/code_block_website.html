@@ -1,0 +1,34 @@
+<div class="highlight">
+  <pre
+    class="highlight"
+  ><code><div class="table-wrap"><table class="rouge-table"><tbody><tr>
+    <td class="rouge-gutter gl"><pre class="lineno">1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    </pre></td>
+    <td class="rouge-code"><pre><span class="k">func</span> <span class="n">insertionSort</span><span class="p">(</span><span class="n">s</span> <span class="kt">string</span><span class="p">)</span> <span class="kt">string</span> <span class="p">{</span>
+        <span class="n">sorted</span> <span class="o">:=</span> <span class="n">strings</span><span class="o">.</span><span class="n">Split</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="s">""</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">:=</span> <span class="m">1</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">j</span> <span class="o">:=</span> <span class="n">i</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="m">0</span> <span class="o">&amp;&amp;</span> <span class="n">sorted</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="m">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">sorted</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">{</span>
+                <span class="n">sorted</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">sorted</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="m">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">sorted</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="m">1</span><span class="p">],</span> <span class="n">sorted</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+                <span class="n">j</span><span class="o">--</span>
+            <span class="p">}</span>
+            <span class="n">i</span><span class="o">++</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">strings</span><span class="o">.</span><span class="n">Join</span><span class="p">(</span><span class="n">sorted</span><span class="p">,</span> <span class="s">""</span><span class="p">)</span>
+    <span class="p">}</span>
+    </pre></td>
+    </tr></tbody></table></div></code></pre>
+</div>
